@@ -367,6 +367,7 @@
 
 #reservationTable_wrapper thead th {
   text-align: center;
+  /* white-space: nowrap; */
 }
 
 #reservationTable_wrapper .dataTables_filter label {
