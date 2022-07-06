@@ -1,0 +1,48 @@
+.navbar {
+  background-color: #e6eeef;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+}
+.section-contactus-page {
+  padding: 60px 0;
+}
+.contactus-heading {
+  font-size: 25px;
+  font-weight: 400;
+  color: #51adb5;
+  margin-bottom: 35px;
+}
+.contactus-left .contact-row img {
+  filter: invert(1);
+}
+.appreciate-text {
+  margin-top: 15px;
+  font-size: 15px;
+}
+.infoheading {
+  font-weight: 400;
+  font-size: 22px;
+}
+.infopara {
+  font-size: 15px;
+}
+
+.send-cta,
+.send-cta:hover {
+  background: #50adb5;
+  color: white;
+  font-size: 20px;
+  padding: 10px 0;
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.send-cta.hvr-sweep-to-right:before {
+  background: #3a8086;
+}
+
+@media (max-width: 767px) {
+  .send-cta {
+    width: auto;
+  }
+}

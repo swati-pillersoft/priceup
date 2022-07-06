@@ -1,0 +1,318 @@
+.sub-btn {
+  border: 0;
+  background: #fff;
+  box-shadow: 0 3px 6px rgba(22, 19, 19, 0.68);
+  padding: 12px 30px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+.subscription-table {
+  margin-top: 35px;
+}
+.table-head {
+  background: #51adb5;
+  color: #fff;
+}
+.table-body-subs {
+  position: relative;
+  top: 8px;
+  box-shadow: 0 3px 6px rgba(227, 220, 220, 0.68);
+}
+.subs-table-data td {
+  padding: 20px;
+}
+.id-name {
+  color: #51adb5;
+}
+.innoice a,
+.upgrade a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #51adb5;
+}
+.plan-card {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.subscription-table thead th {
+  font-weight: 400;
+}
+
+.subs-plan-heading {
+  font-size: 20px;
+  padding: 0 10px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subscription-back-btn {
+  border: 1px solid #444;
+  padding: 6px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscription-plans-wrapper {
+  display: none;
+}
+
+.payment-form [type="radio"]:checked,
+.payment-form [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+.payment-form [type="radio"]:checked + label,
+.payment-form [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+  line-height: 26px;
+  display: inline-block;
+  color: #666;
+}
+.payment-form [type="radio"]:checked + label:before,
+.payment-form [type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+.payment-form [type="radio"]:checked + label:after,
+.payment-form [type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background: #707070;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.payment-form [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.payment-form [type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.selected-plan-row {
+  display: flex;
+}
+
+.selected-plan {
+  flex: 1;
+  margin-right: 5px;
+  padding: 10px 15px;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.plan-name {
+  color: #51adb5;
+  margin: 0;
+  font-size: 19px;
+}
+
+.changeplan-btn,
+.changeplan-btn:hover,
+.changeplan-btn:focus,
+.changeplan-btn:active {
+  background: #51adb5;
+  border-radius: 0;
+  color: #fff;
+  font-size: 17px;
+}
+
+.selected-title {
+  margin-bottom: 8px;
+}
+
+.plan-name {
+  font-size: 18px;
+  color: #51adb5;
+  margin: 0;
+}
+
+.changeplan-btn {
+  background: #51adb5;
+  color: #fff;
+  border-radius: 3px;
+  border: 1px solid #51adb5;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 8px 40px;
+}
+.card-detail-form {
+  display: flex;
+}
+
+.payment-form {
+  margin: 35px 0;
+}
+
+.card-detail-form .text-light {
+  color: #b9b9b9 !important;
+  margin-right: 20px;
+}
+
+.radioWrapper {
+  margin: 10px 40px 0 0;
+  display: inline-block;
+}
+
+.payment-form-control {
+  padding: 8px 10px;
+  border: 1px solid #444;
+  border-radius: 0;
+}
+
+.card-detail-form .form-inline {
+  margin-right: 25px;
+}
+
+#cvc {
+  width: 70px;
+}
+
+#exp {
+  width: 140px;
+}
+
+.btn.btn-submit {
+  display: block;
+  margin: 0 auto;
+  background: #51adb5;
+  color: #fff !important;
+  font-size: 18px;
+  padding: 12px 50px;
+  margin-top: 60px;
+}
+
+.btn.btn-submit:before {
+  background: #3b8289;
+}
+
+.update-subscription-wrapper {
+  display: none;
+}
+
+td.upgrade button {
+  border: 0;
+  background: transparent;
+  font-weight: bold;
+  color: #51adb5;
+  font-size: 16px;
+  padding: 0;
+}
+
+.invoice-dropdown-grp {
+  display: flex;
+  justify-content: space-between;
+}
+#dropdownMenuButton1,
+#dropdownMenuButton2,
+#dropdownMenuButton3 {
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  color: #000;
+  border: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 15px;
+}
+.invoice-table-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  background: #51adb5;
+  padding: 10px 20px;
+  align-items: center;
+
+  color: #fff;
+}
+.invoice-table-row p {
+  margin-bottom: 0;
+}
+.invoice-row {
+  font-size: 22px;
+}
+.invoice-box {
+  padding: 10px;
+  border: 1px solid #000;
+  border-top: 0;
+}
+.table-invoice-head th {
+  font-weight: 500;
+  background: #e8f0f1;
+  position: relative;
+  top: 10px;
+}
+.table-body-subs-invoice {
+  margin-top: 10px;
+  position: relative;
+  top: 10px;
+  bottom: 13px;
+  border: 1px solid #eee;
+  border-top: 1px solid #000;
+}
+.subs-table-data-invoice td {
+  padding: 30px;
+}
+.table-invoice-head {
+  position: relative;
+  bottom: 16px;
+}
+.invoice-card {
+  display: none;
+}
+.status-innvoice {
+  color: #cc5252;
+}
+
+.invoice-pagination {
+  margin: 20px 0;
+}
+
+.invoice-pagination .page-link {
+  height: 35px;
+  width: 35px;
+  border-radius: 50% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #444;
+}
+
+.invoice-pagination .page-item.prev-btn {
+  margin-right: 10px;
+}
+
+.invoice-pagination .page-item.next-btn {
+  margin-left: 10px;
+}
+
+.invoice-pagination .page-item {
+  margin: 0 3px;
+}
+
+.invoice-pagination .page-link.active {
+  color: #fff;
+  background-color: #51adb5;
+}

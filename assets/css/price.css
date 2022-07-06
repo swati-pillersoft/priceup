@@ -1,0 +1,92 @@
+.more-action-btn {
+  width: 160px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  display: none;
+}
+
+#priceCalendar th,
+#priceCalendar .fc-datagrid-cell-cushion {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+#priceCalendar .fc-datagrid-cell-cushion {
+  font-size: 15px;
+}
+
+#priceCalendar .fc-toolbar-title {
+  font-size: 1.5rem;
+}
+
+#priceCalendar .fc-toolbar-title:after {
+  font-size: 1.5rem;
+}
+
+#priceCalendar .fc-timeline-slot-frame p {
+  margin: 3px;
+}
+
+#priceCalendar .fc-bg-event {
+  opacity: 1;
+}
+
+#priceCalendar .fc-bg-event .fc-event-title {
+  font-style: normal;
+  text-align: center;
+}
+
+#priceCalendar.fc-theme-standard td {
+  text-align: center;
+}
+
+#priceCalendar .fc-datagrid-header .fc-datagrid-cell-frame {
+  justify-content: center;
+}
+
+.notificationDropdown .dropdown-menu {
+  width: auto !important;
+  right: 20px !important;
+  left: auto;
+  background: #fff !important;
+  margin-top: 0 !important;
+  min-width: 0;
+  font-size: 14px;
+}
+
+.notificationDropdown .dropdown-menu .dropdown-item {
+  padding: 0.25rem 0.4rem;
+}
+
+.notificationDropdown {
+  position: relative;
+}
+
+#notificationPopupBtn {
+  padding: 0;
+}
+
+#notificationPopup .dropdown-item {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+#notificationPopup {
+  position: absolute;
+  right: 0;
+  background: #fff;
+  width: auto;
+  top: 100%;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  z-index: 2;
+  display: none;
+}
+.fc-button-group button.fc-prev-button.fc-button.fc-button-primary,
+.fc-button-group button.fc-next-button.fc-button.fc-button-primary {
+  background: transparent !important;
+}
+.fc-button-group .fc-button .fc-icon {
+  font-size: 1.9em;
+  color: #51adb5;
+  font-weight: bold;
+}

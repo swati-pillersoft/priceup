@@ -1,0 +1,472 @@
+.card-status {
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 10px;
+  color: #000;
+}
+
+.text-primary {
+  color: #51adb5 !important;
+}
+
+.text-brown {
+  color: #e9aa69;
+}
+
+.bg-primary {
+  background-color: #51adb5 !important;
+}
+
+.bg-classic-red {
+  background-color: #eb8d8d;
+}
+
+.bg-pale-yellow {
+  background-color: #f0f998;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #51adb5;
+  border-color: #51adb5;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  color: #fff;
+  background-color: #51adb5 !important;
+  border-color: #51adb5 !important;
+}
+
+#report .wrapper {
+  display: block;
+  position: relative;
+}
+
+#reportRevenueChart {
+  width: 100%;
+}
+
+.pms-top-row .card {
+  border-radius: 4px;
+  border-color: transparent;
+  box-shadow: 0 3px 6px #51adb5;
+}
+
+.pms-top-row .card-footer {
+  border-top-color: #51adb5;
+}
+
+.pms-tabs-row a.nav-link:focus,
+.pms-tabs-row a.nav-link:hover {
+  border-color: transparent;
+  color: #000;
+}
+
+.pms-tabs-row a.nav-link.active,
+.pms-tabs-row a.nav-link.active:hover,
+.pms-tabs-row a.nav-link.active:focus {
+  border: 1px solid #51adb5;
+  border-radius: 8px;
+  color: #51adb5;
+  background: #f9fcfc;
+}
+
+.pms-tabs-row a.nav-link.active::after {
+  display: none;
+}
+
+.pms-main-wrapper .tab-content > .tab-pane {
+  width: 100%;
+}
+
+#pmsTab li {
+  margin: 0 20px;
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#reservationTable th {
+  white-space: nowrap;
+}
+
+#reservationTable td {
+  background: #e6eeef;
+  border-width: 10px;
+  border-color: #fff;
+}
+
+#reservationTable_wrapper .dataTables_paginate {
+  float: none;
+}
+
+.reservation-tableheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  padding: 10px;
+  background: #51adb5;
+  border-radius: 8px 8px 0 0;
+  color: #fff;
+}
+
+.tableheader-left .fas {
+  font-size: 24px;
+}
+
+.reservation-table-wrapper {
+  box-shadow: 0 3px 6px #51adb5;
+  border-radius: 8px 8px 0 0;
+}
+
+#reservationTable td[data-toggle="modal"] {
+  cursor: pointer;
+}
+
+#reservationModalLabel {
+  flex: 1;
+}
+
+.modal-header button {
+  opacity: 1;
+}
+
+#reservationModal .card {
+  border: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 10px;
+  height: 100%;
+}
+
+#reservationModal .modal-header {
+  border-bottom-color: #51adb5;
+}
+
+#reservationtable-pills .nav-link:hover {
+  color: #000;
+}
+#reservationtable-pills .nav-link.active {
+  background: transparent;
+  color: #50adb5;
+}
+
+#reservationtable-pills .nav-link.active::after {
+  display: none;
+}
+
+#reservationModal .table-responsive {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* width */
+#reservationModal .modal-body::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+#reservationModal .modal-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+#reservationModal .modal-body::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+#reservationModal .modal-body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#reservationModal input[type="number"]::-webkit-inner-spin-button,
+#reservationModal input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+#reservationModal .form-control {
+  border: 0;
+  border-bottom: 1px solid lightgray;
+  border-radius: 0;
+}
+
+#reservationModal .form-control:focus {
+  box-shadow: none;
+  border-bottom-color: darkslategray;
+}
+
+#reservationModal .table th {
+  border-top: 0;
+  white-space: nowrap;
+  background: rgb(80 173 181);
+  color: #fff;
+  font-weight: 400;
+}
+
+#reservationModal .table td {
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.dateformgroup {
+  position: relative;
+}
+
+.dateformgroup .form-control {
+  padding-right: 34px;
+}
+
+.dateformgroup img {
+  width: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+}
+
+#reservationModal
+  .custom-control-input:checked
+  ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #000000;
+  background-color: #ffffff;
+}
+
+#reservationModal
+  .custom-checkbox
+  .custom-control-input:checked
+  ~ .custom-control-label::after {
+  filter: invert(1);
+  top: -0.35rem;
+  left: -1.7rem;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
+
+#reservationModal .table-responsive td {
+  background: #e6eeef;
+  border-width: 10px;
+  border-color: #fff;
+}
+
+#reservationModal .modal-content {
+  box-shadow: 0 3px 6px #51adb5;
+  border: 0;
+}
+
+.reservation-backdrop.show {
+  opacity: 0;
+}
+
+.rate-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 20px 0;
+}
+
+.rate-group-header h6 {
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+#rategroupTable_paginate .page-link {
+  height: 30px;
+  width: 30px;
+}
+
+#rategroupTable,
+#rateplanTable {
+  width: 100%;
+  text-align: center;
+}
+
+.rate-plans .rate-group-table-wrapper {
+  padding: 0;
+}
+
+#rategroupTable th {
+  width: 50%;
+  background: #51adb5;
+  color: #fff;
+  font-weight: 500;
+  padding: 12px;
+  border-top: 0;
+}
+
+#rategroupTable th:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+#rategroupTable th:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+#rategroupTable td {
+  background: #e6eeef;
+  border-width: 10px;
+  border-color: #fff;
+}
+
+#rateandoccupancy
+  .custom-control-input:checked
+  ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #51adb5;
+  background-color: #ffffff;
+}
+
+#rateandoccupancy
+  .custom-checkbox
+  .custom-control-input:checked
+  ~ .custom-control-label::after {
+  /* filter: invert(1); */
+  top: -0.35rem;
+  left: -1.7rem;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../img/tick.svg");
+  background-size: 0.9rem;
+}
+
+.rate-group-table-wrapper {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  padding: 10px 6px 0 6px;
+}
+
+#rategroupTable_paginate {
+  margin: 10px 0;
+}
+
+#rategroupTable_info {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#reservationTable_wrapper {
+  padding: 0 8px;
+}
+
+#reservationTable_paginate {
+  margin: 8px 0;
+}
+
+#reservationTable_paginate .page-link {
+  height: 30px;
+  width: 30px;
+}
+
+#reservationTable_wrapper thead th {
+  text-align: center;
+}
+
+#reservationTable_wrapper .dataTables_filter label {
+  display: none;
+}
+
+.reservation-tableheader input.form-control {
+  border-radius: 8px;
+}
+
+.reservation-tableheader .btn-secondary,
+.reservation-tableheader .btn-secondary:focus,
+.reservation-tableheader .btn-secondary:hover,
+.reservation-tableheader .btn-secondary:active {
+  background: #51adb5 !important;
+  border: 0;
+}
+
+.reservation-tableheader .btn-secondary:focus,
+.reservation-tableheader .btn-secondary:active {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+#rategroupTable_wrapper th,
+#rateplanTable th {
+  border-top: 0;
+  white-space: nowrap;
+  background: rgb(80 173 181);
+  color: #fff;
+  font-weight: 400;
+  border-bottom: 10px solid #fff;
+  text-align: center;
+}
+
+#rategroupTable_wrapper th:first-child,
+#rateplanTable th:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+#rategroupTable_wrapper th:last-child,
+#rateplanTable th:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+#addRategroupModal .form-control {
+  border: 0;
+  border-bottom: 1px solid #cfcfcf;
+  border-radius: 0;
+}
+
+#pmsTabContent #report .card {
+  border: 0;
+  box-shadow: 0 3px 6px #51adb5;
+}
+
+.guest-progress-wrapper .progress {
+  height: 6px;
+  flex: 1;
+}
+
+.progress-parent,
+#report .guest-count {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.guest-progress-wrapper {
+  margin-bottom: 0.8rem;
+}
+
+#report .card-header:first-child {
+  background: transparent;
+  color: #212529;
+}
+
+.billing-table thead th {
+  background: #51adb5;
+  color: #fff;
+  font-weight: 400;
+}
+
+#bookingLeadTimeChart .c3-legend-item {
+  transform: translateY(10px);
+}
+
+.staylengthformula-wrapper {
+  justify-content: center;
+  margin: 20px 0 0 0;
+  font-size: 13px;
+}
+
+.staylengthformula-right hr {
+  margin: 5px 0;
+}
+
+#addRategroupModal .form-control:focus {
+  box-shadow: none;
+}
+
+.pms-tabs-row .nav-link img {
+  width: 20px;
+}

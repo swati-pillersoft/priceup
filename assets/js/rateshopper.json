@@ -1,0 +1,13 @@
+[
+  { "id": "a", "title": "My Property" },
+  {
+    "id": "b",
+    "title": "Hotel Conchiglia",
+    "eventColor": "green"
+  },
+  { "id": "c", "title": "Hotel Tiempo", "eventColor": "orange" },
+  {
+    "id": "d",
+    "title": "Hotel Quirinale"
+  }
+]

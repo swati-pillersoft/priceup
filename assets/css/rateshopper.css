@@ -1,0 +1,245 @@
+#rateshopperChartMain svg {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}
+
+#rateshopperChartMain text {
+  fill: #4d4b4b;
+}
+
+.rateshopperchartmain-title {
+  text-align: right;
+  font-size: 14px;
+  margin: 0 0 50px 0;
+}
+
+.rateshopper-topoptions-row {
+  display: flex;
+  padding: 10px 7px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+.rateshopper-topoptions-row .form-control {
+  background: #e8f0f1;
+  border: 0;
+  color: #000;
+  font-size: 14px;
+  height: 38px;
+  padding: 5px;
+  border-radius: 0;
+}
+
+.rateshopper-formgroup {
+  flex: 1;
+  margin: 0 6px;
+}
+
+.compare-icons .no-boxshadow .rateshopperimg {
+  width: 30px;
+}
+
+.compare-icons .rateshopperimg {
+  width: 20px;
+}
+
+.compare-icons .box-icon {
+  height: 38px;
+  width: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+.compare-icons .box-icon.active {
+  background: #e8f0f1;
+}
+
+.compare-icons {
+  display: flex;
+  border-bottom: 0;
+  flex-wrap: nowrap;
+}
+
+.compare-icons .no-boxshadow {
+  display: flex;
+  align-self: center;
+  margin: 0 5px;
+}
+
+.rateshopper-topoptions-row .form-control:focus {
+  box-shadow: none;
+}
+
+.rateshopper-chart-view {
+  padding: 40px 30px;
+  box-shadow: 0 3px 6px #51adb5;
+}
+
+.rateshopper-calendar-detail-view {
+  padding: 30px 30px 50px 30px;
+  box-shadow: 0 3px 6px #51adb5;
+}
+
+/* #rateshopperChartCalendarDetail {
+  width: 90%;
+} */
+
+.rateshopperChartCalendarDetail-heading {
+  color: #51adb5;
+}
+
+.rateshopperChartCalendarDetail-subheading {
+  font-size: 23px;
+  font-weight: 500;
+}
+
+#rateshopperCalendar .fc-toolbar-title::after {
+  display: none;
+}
+
+.fc .fc-timeline-slot-cushion {
+  color: #222;
+  text-decoration: none;
+}
+
+.fc-h-event {
+  text-align: center;
+  margin: 5px;
+}
+
+#rateshopperCalendar .fc-h-event {
+  margin: 5px;
+  border: 0px solid rgb(255, 255, 255);
+  box-shadow: 0 3px 6px rgb(0 0 0 / 22%);
+}
+
+#rateshopperCalendar .fc-timeline-slot {
+  background: #f9fcfc;
+}
+
+#rateshopperCalendar td,
+#rateshopperCalendar th {
+  vertical-align: middle;
+}
+
+.rateshopper-calendar-view {
+  padding: 10px 10px 20px 10px;
+  box-shadow: 0 3px 6px #51adb5;
+}
+#rateshopperCalendar .fc-resource[data-resource-id="a"] {
+  background: #a7e9ef;
+}
+
+#rateshopperCalendar .fc-timeline-event {
+  /* cursor: pointer; */
+}
+
+.rateShopperEventTitle {
+  margin-bottom: 5px;
+}
+
+#rateshopperCalendar .text-success {
+  color: #1e6970 !important;
+}
+
+#rateshopperCalendar .text-danger {
+  color: #cc5252 !important;
+}
+
+#rateshopperCalendar .fc-timeline-slot-cushion {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.fc-datagrid-cell.rateshopper-header-class {
+  background: #f9fcfc;
+}
+
+.fc-event,
+.fc-event:hover {
+  color: #000;
+}
+
+.fc .fc-button-primary,
+.fc .fc-button-primary:hover,
+.fc .fc-button-primary:active,
+.fc .fc-button-primary:focus {
+  border-color: #ffffff !important;
+  background-color: #51adb5 !important;
+  box-shadow: none !important;
+}
+
+.fc-theme-standard td > div,
+.fc-theme-standard th > div {
+  /* box-shadow: 0 3px 6px rgb(0 0 0 / 7%); */
+}
+
+/* .fc-datagrid-cell-frame {
+  height: 42px !important;
+} */
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+  /* border: 1px solid transparent;
+  border-left-color: #efefef;
+  border-right-color: #efefef; */
+}
+
+.fc-direction-ltr .fc-timeline-event.fc-event-end,
+.fc-direction-ltr .fc-timeline-more-link {
+  margin-right: 5px;
+}
+
+.fc .fc-scrollgrid-section-liquid > td {
+  height: 0;
+  width: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.fc .fc-scrollgrid-section,
+.fc .fc-scrollgrid-section table,
+.fc .fc-scrollgrid-section > td {
+  height: 0;
+  width: 0;
+}
+
+/* 
+.fc table {
+  table-layout: auto;
+}
+.fc-view > table {
+  min-width: 0;
+  width: auto;
+}
+.fc-axis {
+  min-width: 100px;
+  width: 100px;
+}
+.fc-day,
+.fc-resource-cell,
+.fc-content-col {
+  min-width: 100px;
+  width: 100px;
+} */
+
+#rateshopperCalendarView,
+#rateshopperCalendarDetailView {
+  display: none;
+}
+
+.fc .fc-scroller-liquid-absolute {
+  overflow: auto !important;
+}
+
+.legend span {
+  width: 33.333333%;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+}

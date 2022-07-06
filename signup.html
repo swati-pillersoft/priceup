@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./assets/css/hover.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
+    <link rel="stylesheet" href="./assets/css/signup.css" />
+    <title>SignUp</title>
+  </head>
+  <body>
+    <main class="signup-page">
+      <div class="container-fluid">
+        <div class="row signup-main-row">
+          <div class="col-md-4 col-lg-3 pl-0 pr-0">
+            <div class="signup-bg">
+              <div class="signup-content">
+                <p class="signup-para">Be a part of</p>
+                <div class="signup-logo">
+                  <a href="./index.html">
+                    <img
+                      src="./assets/img/logo.png"
+                      alt="logo"
+                      class="signup-logo-img"
+                    />
+                  </a>
+                </div>
+                <p class="signup-create">Create Account</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-9 pl-0 pr-0">
+            <div class="container-fluid signup-form-details">
+              <form>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group log-form-group">
+                      <label class="log-label"
+                        ><input
+                          type="text"
+                          class="form-control"
+                          placeholder="Hotel Name"
+                      /></label>
+                    </div>
+                    <div class="form-group">
+                      <label class="log-label">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="ownername"
+                          placeholder="Owner Name"
+                        />
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <label class="log-label">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="address1"
+                          placeholder="Address Line 1"
+                        />
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <label class="log-label">
+                        <!-- <input
+                          type="text"
+                          class="form-control"
+                          id="country"
+                          placeholder="Country"
+                        /> -->
+                        <select
+                          name="country"
+                          class="countries form-control"
+                          id="countryId"
+                        >
+                          <option value="" selected hidden>Country</option>
+                        </select>
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <label class="log-label">
+                        <!-- <input
+                          type="text"
+                          class="form-control"
+                          id="cityname"
+                          placeholder="City"
+                        /> -->
+                        <select
+                          name="city"
+                          class="cities form-control"
+                          id="cityId"
+                        >
+                          <option value="">City</option>
+                        </select>
+                      </label>
+                    </div>
+                    <!-- exchanged -->
+                    <div class="form-group file-input-group">
+                      <label
+                        class="log-label file-input-label license-input-label"
+                      >
+                        <span class="file-input-placeholder"
+                          >Upload License Copy</span
+                        >
+
+                        <img
+                          src="./assets/img/download-pdf.png"
+                          alt="pdf-icon"
+                          class="pdf-icon"
+                        />
+                        <span class="file-name">Image 1</span>
+                        <input
+                          type="file"
+                          class="form-control file-input"
+                          id="uploadLicenseInput"
+                        />
+                      </label>
+                    </div>
+                    <!-- <div class="form-group">
+                      <label class="log-label">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="license"
+                          placeholder="License Number"
+                        />
+                      </label>
+                    </div> -->
+                    <div class="form-group">
+                      <label class="log-label">
+                        <input
+                          type="Email"
+                          class="form-control"
+                          id="email"
+                          placeholder="Email"
+                        />
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <label class="log-label">
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="password"
+                          placeholder="Password"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <!-- <div class="form-group file-input-group">
+                      <label
+                        class="log-label file-input-label"
+                        id="hotelLogoLabel"
+                      >
+                        <span class="file-input-placeholder"
+                          >Hotel Logo/Image</span
+                        >
+                        <input type="file" class="form-control file-input" />
+                        <img
+                          src="./assets/img/download-pdf.png"
+                          alt=""
+                          class="pdf-icon"
+                        />
+                      </label>
+                    </div> -->
+
+                    <div class="form-group file-input-group">
+                      <label
+                        class="log-label file-input-label license-input-label"
+                      >
+                        <span class="file-input-placeholder"
+                          >Hotel Logo/Image</span
+                        >
+
+                        <img
+                          src="./assets/img/download-pdf.png"
+                          alt="pdf-icon"
+                          class="pdf-icon"
+                        />
+                        <span class="file-name">Image 1</span>
+                        <input
+                          type="file"
+                          class="form-control file-input"
+                          id="uploadLicenseInput"
+                        />
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="log-label">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="website"
+                          aria-describedby="textHelp"
+                          placeholder="Website(Optional)"
+                        />
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <label class="log-label">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="address2"
+                          placeholder="Address Line 2"
+                        />
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <label class="log-label">
+                        <!-- <input
+                          type="text"
+                          class="form-control"
+                          id="state"
+                          placeholder="State"
+                        /> -->
+                        <select
+                          name="state"
+                          class="states form-control"
+                          id="stateId"
+                        >
+                          <option value="">State</option>
+                        </select>
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="log-label">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="postal"
+                          placeholder="Postal Code"
+                        />
+                      </label>
+                    </div>
+                    <!-- exchanged -->
+                    <div class="form-group">
+                      <label class="log-label">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="license"
+                          placeholder="License Number"
+                          disabled
+                        />
+                        <span
+                          class="fas fa-info-circle"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Service deadline must be set by admin After your registration! "
+                        ></span>
+                      </label>
+                    </div>
+                    <!-- <div class="form-group file-input-group">
+                      <label
+                        class="log-label file-input-label license-input-label"
+                      >
+                        <span class="file-input-placeholder"
+                          >Upload License Copy</span
+                        >
+
+                        <img
+                          src="./assets/img/download-pdf.png"
+                          alt="pdf-icon"
+                          class="pdf-icon"
+                        />
+                        <span class="file-name">Image 1</span>
+                        <input
+                          type="file"
+                          class="form-control file-input"
+                          id="uploadLicenseInput"
+                          placeholder="Hotel Logo/Image"
+                        />
+                      </label>
+                    </div> -->
+
+                    <div class="form-group">
+                      <label class="log-label">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="number"
+                          placeholder="Mobile"
+                        />
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <label class="log-label">
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="confirmPassword"
+                          placeholder="Confirm Password"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group hotel-details-group">
+                      <label class="log-label">
+                        <textarea
+                          class="form-control"
+                          id="hotelDetailsTextarea"
+                          placeholder="Add Hotel Details"
+                        ></textarea>
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <div
+                        class="custom-control custom-checkbox signup-checkbox"
+                      >
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="emailrec"
+                        />
+                        <label class="custom-control-label" for="emailrec"
+                          >Yes, I want to receive PriceUp Emails</label
+                        >
+                      </div>
+                      <div
+                        class="custom-control custom-checkbox signup-checkbox"
+                      >
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="terms"
+                        />
+                        <label class="custom-control-label" for="terms"
+                          >Yes, I agree to all the
+                          <a href="#" class="log-link">Terms</a> and
+                          <a href="#" class="log-link">Privacy Policy</a>
+                          receive PriceUp Emails</label
+                        >
+                      </div>
+                    </div>
+                    <div class="form-group text-center">
+                      <a
+                        href="./signup2.html"
+                        class="btn btn-info signup-cta hvr-sweep-to-right"
+                        >Sign Up</a
+                      >
+                    </div>
+                    <p class="mt-4 text-center">
+                      Already have an account?
+                      <a href="#" class="log-link">SignIn</a>
+                    </p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/signUp.js"></script>
+    <script src="./assets/js/countrystatecity.js"></script>
+  </body>
+</html>

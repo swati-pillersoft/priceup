@@ -1,0 +1,95 @@
+.forecast-chart-wrapper {
+  position: relative;
+  padding: 30px;
+  box-shadow: 0 3px 6px #51adb5;
+  height: 100%;
+}
+
+.forecast-wrapper h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.fc-license-message {
+  display: none;
+}
+
+.c3-line {
+  stroke-width: 2px;
+}
+
+.c3-tooltip {
+  opacity: 1;
+}
+
+.c3-tooltip tr {
+  border: 1px solid transparent;
+  /* display: flex; */
+}
+
+.c3-tooltip th {
+  background-color: #1d1d1d;
+  text-align: center;
+  /* display: block; */
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.c3-tooltip td {
+  border-left: 1px solid transparent;
+  text-transform: capitalize;
+}
+
+/* .c3-tooltip td.name {
+  flex: 1
+} */
+
+.c3-tooltip td.value {
+  text-align: right;
+  /* flex: 1; */
+}
+
+/* .c3-tooltip td:last-child {
+  order: -1;
+} */
+
+.c3-tooltip {
+  border-collapse: separate;
+  /* display: block; */
+}
+
+.c3-tooltip td > span {
+  border-radius: 50%;
+  position: relative;
+  height: 16px;
+  width: 16px;
+  top: 2px;
+}
+
+.c3-tooltip {
+  background-color: transparent;
+  font-family: sans-serif;
+}
+
+#forecastRevenueForecastC3 svg {
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+/* .c3-legend-item-tile {
+  stroke-linecap: round;
+} */
+
+.c3-tooltip td {
+  color: #fff;
+  background-color: #2e2e2e;
+  text-transform: capitalize;
+}
+
+.c3-tooltip tr:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+.c3-tooltip tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
+}

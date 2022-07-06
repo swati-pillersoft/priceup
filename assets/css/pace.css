@@ -1,0 +1,81 @@
+.pace-graph-row-1,
+.pace-graph-row-2 {
+  display: flex;
+}
+
+.paceChart1-wrapper,
+.paceChart2-wrapper,
+.paceChart3-wrapper,
+.paceChart4-wrapper {
+  /* flex: 1; */
+  padding: 30px;
+  box-shadow: 0 3px 6px rgb(30 105 112 / 40%);
+  background-color: #f9fcfc;
+  position: relative;
+}
+
+.paceChart1-wrapper,
+.paceChart3-wrapper {
+  width: 60%;
+}
+
+.paceChart2-wrapper,
+.paceChart4-wrapper {
+  width: 40%;
+}
+
+.pace-chart-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* #paceChart2,
+#paceChart4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.pace-graph-row-2 {
+  margin: 40px 0;
+}
+
+#pickUpTable.pacePickUpTable > thead > tr > th {
+  padding: 15px;
+}
+
+/* #paceChart2 > svg {
+  width: 100%;
+} */
+
+.legend-row {
+  margin: 0px 0 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.legend-row span {
+  width: 70%;
+}
+
+.legend-row .fas {
+  color: rgb(167, 233, 239);
+}
+
+.legend-row.row2 .fas {
+  color: rgb(30, 105, 112);
+}
+
+.c3 svg {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  /* height: 100%; */
+}
+
+#pickUpTable > thead > tr > th:first-child {
+  border-left: 0;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}

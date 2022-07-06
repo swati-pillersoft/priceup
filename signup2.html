@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+      integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/hover.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
+    <link rel="stylesheet" href="./assets/css/signup.css" />
+    <title>SignUp 2</title>
+  </head>
+  <body>
+    <main class="signup-page">
+      <div class="container-fluid">
+        <div class="row signup-main-row">
+          <div class="col-md-4 col-lg-3 pl-0 pr-0">
+            <div class="signup-bg">
+              <div class="signup-content">
+                <p class="signup-para">Be a part of</p>
+                <div class="signup-logo">
+                  <a href="./index.html">
+                    <img
+                      src="./assets/img/logo.png"
+                      alt="logo"
+                      class="signup-logo-img"
+                    />
+                  </a>
+                </div>
+                <p class="signup-create">Create Account</p>
+                <a href="./signup.html" class="btn back-btn btn-outline-light"
+                  ><i class="fas fa-chevron-left mr-2"></i>Back</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-9 pl-0 pr-0">
+            <div class="container-fluid signup-form-details">
+              <form>
+                <div class="row">
+                  <!-- <div
+                      class="form-group sign-form-group datepicker-form-group tooltip-group"
+                    >
+                      <label for="serviceDeadline">Service Deadline</label>
+                      <input
+                        type="text"
+                        id="serviceDeadline"
+                        class="form-control"
+                        disabled
+                      />
+                      <img
+                        src="./assets/img/Icon awesome-calendar-alt.svg"
+                        alt="Calendar"
+                        class="datepicker-icon"
+                      />
+                      <span
+                        class="fas fa-info-circle"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Service deadline must be set by admin After your registration! "
+                      ></span>
+                    </div> -->
+                  <div class="col-md-6">
+                    <div class="form-group sign-form-group">
+                      <label for="facilityName">Facility Name</label>
+                      <input
+                        type="text"
+                        id="facilityName"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group sign-form-group sign-dropdown-group">
+                      <label for="structureType">Structure Type</label>
+                      <select id="structureType" class="form-control">
+                        <option value="" selected disabled hidden></option>
+                        <option value="Hotel">Hotel</option>
+                        <option value="B&B">B&B</option>
+                        <option value="Farm House">Farm House</option>
+                        <option value="Guest House">Guest House</option>
+                        <option value="Holiday Home">Holiday Home</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group sign-form-group">
+                      <label for="stars">Stars</label>
+                      <select id="stars" class="form-control">
+                        <option value="" selected disabled hidden></option>
+                        <option value="1 Star">1 Star</option>
+                        <option value="2 Stars">2 Stars</option>
+                        <option value="3 Stars">3 Stars</option>
+                        <option value="3 Stars Superior">
+                          3 Stars Superior
+                        </option>
+                        <option value="4 Stars ">4 Stars</option>
+                        <option value="4 Stars Superior">
+                          4 Stars Superior
+                        </option>
+                        <option value="5 Stars ">5 Stars</option>
+                        <option value="5 Stars Superior">
+                          5 Stars Superior
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group sign-form-group">
+                      <label for="numberOfRooms">Number of Rooms</label>
+                      <input
+                        type="text"
+                        id="numberOfRooms"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group sign-form-group sign-dropdown-group">
+                      <label for="structureType">PMS</label>
+                      <select id="structureType" class="form-control">
+                        <option value="" selected disabled hidden></option>
+                        <option value="Protel">Protel</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group sign-form-group checkbox-form-group">
+                      <!-- <label>&nbsp;</label> -->
+                      <div
+                        class="custom-control custom-checkbox signup-checkbox"
+                      >
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="api"
+                        />
+                        <label class="custom-control-label" for="api"
+                          >API</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 api-token-col">
+                    <div class="form-group sign-form-group">
+                      <label for="numberOfRooms">API Token</label>
+                      <div class="api-token-inputgroup">
+                        <input type="text" id="apiToken" class="form-control" />
+                        <span class="paste-icon"
+                          ><i class="fas fa-paste"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!--
+                <div class="form-group sign-form-group checkbox-form-group">
+                      <div
+                        class="custom-control custom-checkbox signup-checkbox tooltip-group"
+                      >
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="api"
+                          disabled
+                        />
+                        <label class="custom-control-label" for="api"
+                          >API</label
+                        >
+                        <span
+                          class="fas fa-info-circle left-tooltip"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Service deadline must be set by admin After your registration! "
+                        ></span>
+                      </div>
+                    </div> -->
+
+                  <!-- <div class="col-md-6">
+                   <div class="form-group sign-form-group">
+                      <label for="facilityName">Facility Name</label>
+                      <input
+                        type="text"
+                        id="facilityName"
+                        class="form-control"
+                      />
+                    </div> 
+                     <div class="form-group sign-form-group">
+                      <label for="stars">Stars</label>
+                      <input type="text" id="stars" class="form-control" />
+                    </div> 
+                     <div class="form-group sign-form-group sign-dropdown-group">
+                      <label for="structureType">Structure Type</label>
+                      <select id="structureType" class="form-control">
+                        <option value="Option 1">Option 1</option>
+                        <option value="Option 2">Option 2</option>
+                        <option value="Option 3">Option 3</option>
+                      </select>
+                    </div> 
+                     <div class="form-group sign-form-group checkbox-form-group">
+                      <div
+                        class="custom-control custom-checkbox signup-checkbox"
+                      >
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="rateShopper"
+                          disabled
+                        />
+                        <label class="custom-control-label" for="rateShopper"
+                          >Rate Shopper</label
+                        >
+                      </div>
+                    </div> 
+                  </div> -->
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="budget-list-wrapper table-responsive">
+                      <table class="table table-borderless budget-table">
+                        <thead>
+                          <tr>
+                            <th scope="col" colspan="2" class="table-title">
+                              Budget List
+                            </th>
+                            <th scope="col">Jan</th>
+                            <th scope="col">Feb</th>
+                            <th scope="col">March</th>
+                            <th scope="col">April</th>
+                            <th scope="col">May</th>
+                            <th scope="col">June</th>
+                            <th scope="col">July</th>
+                            <th scope="col">Aug</th>
+                            <th scope="col">Sep</th>
+                            <th scope="col">Oct</th>
+                            <th scope="col">Nov</th>
+                            <th scope="col">Dec</th>
+                          </tr>
+                        </thead>
+                        <tbody class="budget-table-card">
+                          <tr>
+                            <th scope="row" rowspan="2">2022</th>
+                            <td class="td-title">RNS</td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td-title">Revenue</td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                        <tbody class="budget-table-card">
+                          <tr>
+                            <th scope="row" rowspan="2">2023</th>
+                            <td class="td-title">RNS</td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td-title">Revenue</td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                        <tbody class="budget-table-card">
+                          <tr>
+                            <th scope="row" rowspan="2">2024</th>
+                            <td class="td-title">RNS</td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td-title">Revenue</td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td class="empty-td" id="js-tdata">
+                              <span class="visible-value">Empty</span>
+
+                              <div class="form-group budget-input-group">
+                                <input
+                                  type="text"
+                                  class="form-control budget-input"
+                                  id="js-tdata-input"
+                                />
+                                <button class="btn btn-info ok-btn">
+                                  <i class="fas fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-dark cancel-btn">
+                                  <i class="fas fa-times"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="form-group text-center mt-5">
+                      <a
+                        href="./dashboard.html"
+                        class="btn btn-info signup-cta hvr-sweep-to-right"
+                        >Continue</a
+                      >
+                    </div>
+                    <p class="copy-text">
+                      Copyright &copy; 2021 All Rights Reserved. Privacy Policy
+                    </p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
+      integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/signUp2.js"></script>
+  </body>
+</html>

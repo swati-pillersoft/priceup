@@ -1,0 +1,66 @@
+.gensettings-wrapper .card {
+  border-color: transparent;
+  box-shadow: 0 3px 6px #51adb5;
+}
+
+.gensettings-tabs-row .nav-link {
+  border: 0;
+}
+
+.gensettings-tabs-row .nav-link.active,
+.gensettings-tabs-row .nav-link:focus,
+.gensettings-tabs-row .nav-link:active,
+.gensettings-tabs-row .nav-link:hover {
+  border: 0;
+  background-color: transparent;
+  color: #50adb5;
+}
+
+.gensettings-tabs-row .nav-link.active::after {
+  display: none;
+}
+
+#areaTypeTable td {
+  background: #e6eeef;
+  border-width: 10px;
+  border-color: #fff;
+  text-align: center;
+}
+
+#areaTypeTable th:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+#areaTypeTable th:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+#areaTypeTable th {
+  border-top: 0;
+  white-space: nowrap;
+  background: rgb(80 173 181);
+  color: #fff;
+  font-weight: 400;
+  border-bottom: 10px solid #fff;
+  text-align: center;
+}
+
+#areatype .custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #51adb5;
+  background-color: #ffffff;
+}
+
+#areatype
+  .custom-checkbox
+  .custom-control-input:checked
+  ~ .custom-control-label::after {
+  /* filter: invert(1); */
+  top: -0.35rem;
+  left: -1.7rem;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../img/tick.svg);
+  background-size: 0.9rem;
+}

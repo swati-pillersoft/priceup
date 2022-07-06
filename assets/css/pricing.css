@@ -1,0 +1,68 @@
+.section-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e8f0f1;
+}
+.navbar {
+  background-color: #e6eeef;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.hero-content {
+  padding: 0 25px;
+  z-index: 1;
+}
+.pricing-heading {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+}
+.bold-price-text {
+  color: #50adb5;
+  font-weight: 600;
+  font-size: 42px;
+  border-bottom: 4px solid #1a1a1a;
+}
+.pricingbanner-img {
+  margin: 20px 0;
+}
+p.pricing-para {
+  margin-top: 22px;
+  font-size: 22px;
+}
+.pricing-main-box {
+  border: 0;
+  box-shadow: none;
+}
+@media (max-width: 1199px) {
+  .pricingbanner-img {
+    width: 62%;
+  }
+}
+@media (max-width: 991px) {
+  .hero-content {
+    padding: 100px 25px 50px 25px;
+  }
+  .pricingbanner-img {
+    width: 52%;
+  }
+  .price-main {
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .section-banner {
+    flex-direction: column;
+  }
+  .hero-content {
+    padding: 30px 25px 30px 25px;
+  }
+  .pricingbanner-img {
+    width: 80%;
+  }
+
+  .pricingbanner-img {
+    width: 95%;
+    margin-top: -20px;
+  }
+}

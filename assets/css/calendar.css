@@ -1,0 +1,125 @@
+.fc .fc-col-header-cell-cushion {
+  padding: 18px;
+  font-weight: 400;
+}
+
+.fc .fc-daygrid-day-number {
+  position: relative;
+  z-index: 4;
+  padding: 4px;
+  font-size: 30px;
+}
+
+.table-bordered td,
+.table-bordered th {
+  /* border: 0; */
+}
+
+.fc .fc-daygrid-day-frame {
+  position: relative;
+  min-height: 100%;
+  /* margin: 4px; */
+  /* border: 1px solid #ebebeb; */
+}
+
+.fc-addEventButton-button.btn.btn-primary {
+  background: #51adb5;
+  border: 1px solid #51adb5;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.fc .fc-toolbar-title {
+  font-size: 1.75em;
+  margin: 0;
+  font-weight: 400;
+}
+
+.fc-toolbar-title:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f073";
+  display: inline-block;
+  padding-left: 15px;
+  font-size: 28px;
+  color: #63b9c1;
+  font-weight: 900;
+}
+
+.fc-today-button.btn {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  background: #fff;
+  border: 0;
+  color: #000;
+}
+
+.calendar-legend {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.calendar-legend > div > span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.calendar-legend > div {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.legend-increase > span {
+  background-color: #1e6970;
+}
+
+.legend-decrease > span {
+  background-color: #cc5252;
+}
+
+.legend-maintain > span {
+  background-color: #e8f0f1;
+}
+
+.calendar-tooltip {
+  opacity: 1;
+  text-align: left;
+}
+
+.calendar-tooltip > .tooltip-inner {
+  background-color: #1a1a1a;
+  opacity: 1;
+  text-align: left;
+}
+
+.calendar-tooltip .arrow {
+  display: none;
+}
+
+#v-pills-calendar .fc-h-event {
+  margin: 0 5px 2px 5px;
+  box-shadow: none;
+}
+
+#v-pills-calendar #calendar a {
+  color: #444;
+}
+
+.eventWithTooltip {
+  cursor: pointer;
+}
+
+.fc-event-main .publicHoliday {
+  position: absolute;
+  top: -38px;
+  left: 3px;
+  font-size: 20px;
+  color: #ffe13b;
+  /* pointer-events: none; */
+}
+
+.publicHoliday {
+  color: #ffe13b;
+}

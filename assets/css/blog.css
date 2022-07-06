@@ -1,0 +1,145 @@
+.navbar {
+  background-color: #e6eeef;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+}
+
+.margin-row {
+  margin-top: 95px;
+}
+.blog-icon img {
+  width: 135px;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-box-col {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.search-btn {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background: #50adb5;
+  bottom: 3px;
+  color: #fff;
+  font-size: 13px;
+}
+
+.search-btn:hover {
+  background: #4aa0a8;
+  color: #fff;
+}
+
+.latest-article-card .card-title {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.search-box input {
+  width: 350px !important;
+  max-width: 100%;
+  padding-right: 40px;
+}
+
+.article-img img {
+  width: 664px;
+  height: 288px;
+  max-width: 100%;
+}
+.article-heading,
+.latest-article-heading {
+  font-weight: 600;
+  margin-left: 5px;
+}
+.article-date {
+  color: #51adb5;
+  font-size: 16px;
+  margin: 15px 0 5px 0;
+}
+.article-news-heading {
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+.article-para {
+  font-size: 14px;
+  line-height: 20px;
+}
+.trending-date {
+  color: #51adb5;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.trending-para {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 0px;
+}
+.trending-card {
+  background: #f9fcfc;
+  display: flex;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.trending-content {
+  margin-left: 12px;
+}
+.section-news {
+  border-bottom: 1px solid #51adb5;
+  margin: 30px auto;
+}
+.latest-article-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-color: transparent;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination .page-item {
+  margin-right: 10px;
+  border-radius: 0;
+}
+.pagination .page-item:first-child .page-link,
+.pagination .page-item:last-child .page-link {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.pagination .page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #51adb5;
+  border-color: #51adb5;
+  font-weight: 700;
+  font-size: 18px;
+}
+.pagination .page-link {
+  color: #51adb5;
+}
+
+.latest-article-card {
+  margin: 15px 0;
+}
+
+.latest-article-card .hidden-text {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .margin-row {
+    margin-top: 35px;
+  }
+  .blog-icon {
+    margin: 0 0 20px 0;
+  }
+}

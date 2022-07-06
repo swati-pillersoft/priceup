@@ -1,0 +1,165 @@
+.priceup-content {
+  padding: 150px 0 200px 0;
+  z-index: 1;
+}
+.bannerimg {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.bannerimg-main {
+  padding: 30px 0 0px 0;
+}
+.banner-heading {
+  font-weight: 300;
+  font-size: 36px;
+}
+
+.banner-subheading {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+.banner-subheading span {
+  color: #50adb5;
+}
+
+.banner-text {
+  font-size: 15px;
+  line-height: 2;
+  margin: 20px 0 0 0;
+}
+
+.section-banner {
+  background: #e8f0f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content {
+  padding: 0 25px;
+  z-index: 1;
+}
+
+.banner-heading span {
+  font-weight: 500;
+}
+
+.offer-card {
+  text-align: center;
+  padding: 20px;
+}
+
+.offer-card img {
+  margin-bottom: 20px;
+}
+
+.offer-card-title {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.offer-card-subtitle {
+  font-weight: 500;
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.offer-card-text {
+  font-size: 14px;
+
+  line-height: 2;
+}
+
+.section-offer {
+  padding: 60px 0;
+}
+
+.feature-section-heading {
+  font-size: 25px;
+  text-align: center;
+  color: #51adb5;
+  margin-bottom: 1rem;
+}
+
+.look-row {
+  margin-top: 40px;
+}
+
+.look-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 92%;
+}
+
+.look-row img {
+  max-width: 100%;
+}
+
+.look-text {
+  width: 75%;
+  line-height: 1.8;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.look-row:nth-child(odd) .look-text {
+  padding: 20px;
+  background: #e8f0f1;
+  border-radius: 10px;
+  box-shadow: 3px 18px 18px rgb(0 0 0 / 16%);
+}
+.feature-carousel-btn {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+@media (max-width: 1199px) {
+  .bannerimg {
+    width: 62%;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-content {
+    padding: 100px 25px 50px 25px;
+  }
+
+  .bannerimg {
+    width: 52%;
+  }
+
+  .look-text {
+    width: 100%;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-banner {
+    flex-direction: column;
+  }
+  .hero-content {
+    padding: 30px 25px 30px 25px;
+  }
+
+  .bannerimg {
+    width: 80%;
+  }
+
+  .look-row:nth-child(odd) .look-text {
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .container {
+    max-width: 98%;
+  }
+}

@@ -1,0 +1,273 @@
+/* .tbody-table:before {
+  content: "@";
+  display: block;
+  line-height: 10px;
+  text-indent: -99999px;
+} */
+#pickUpTable thead > tr > th {
+  background: #51adb5;
+  color: #fff;
+  border: 10px solid #fff;
+  font-weight: 400;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+#pickUpTable {
+  text-align: center;
+}
+
+#pickUpTable thead th {
+  border-radius: 23px;
+  /* border: 5px solid #fff; */
+  text-align: center;
+}
+
+a.sendbtn {
+  color: #fff;
+  background: #51adb5;
+  padding: 6px 15px;
+  border-radius: 5px;
+}
+
+td.occ {
+  color: #ecd717;
+}
+
+td.green-text {
+  color: #1e6970;
+}
+
+td.rns .fas {
+  display: inline;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+#pickUpTable td,
+#pickUpTable th {
+  padding: 0.25rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+#pickUpTable .suggestedpricespan.empty::before {
+  content: "";
+  height: 1px;
+  background: #d6d6d6;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#pickUpTable .suggestedpricespan {
+  display: flex;
+  height: 30px;
+  border-radius: 5px;
+  position: relative;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.suggestedpricespan.redsuggestedprice {
+  background: #cc5252;
+  color: #fff;
+}
+
+.suggestedpricespan.greensuggestedprice {
+  background: #1e6970;
+  color: #fff;
+}
+
+.redtext {
+  color: #cc5252;
+}
+
+#pickUpTable .suggestedpricespan.empty {
+  background: #e8f0f1;
+}
+
+#pickUpTable .rns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 40px !important;
+}
+
+td.dateheading {
+  background: #51adb5;
+  border: 0;
+  color: #fff;
+}
+
+#pickUpTable tr:first-child td.dateheading {
+  border-radius: 15px 15px 0 0;
+}
+
+#pickUpTable tr:last-child td.dateheading {
+  border-radius: 0 0 15px 15px;
+}
+
+.pickup-table {
+  padding: 15px;
+  box-shadow: 0 3px 6px #51adb5;
+  margin-top: 40px;
+}
+
+.pickup-table-title {
+  margin: 10px 0 20px 0;
+  font-size: 18px;
+  color: #000;
+}
+
+#pickUpTable td {
+  border-top: 0;
+}
+
+/* .last-6-wrapper  */
+
+.last-6-wrapper .accordion .fa {
+  margin-right: 0.5rem;
+}
+
+.pickup-accordion button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.pickup-accordion .card {
+  border: 0;
+}
+
+.pickup-accordion {
+  margin: 40px 0 0 0;
+}
+
+.pickup-accordion button:focus,
+.pickup-accordion button:active,
+.pickup-accordion button:hover {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+  color: #fff;
+}
+
+.pickup-accordion > .card > .card-header {
+  border-radius: 6px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 7px -2px #51adb5;
+}
+
+.pickup-graph-row-1 {
+  display: flex;
+}
+
+.pickup-chart-wrapper,
+.variance-chart-wrapper {
+  flex: 1;
+  padding: 30px;
+  box-shadow: 0 3px 6px rgba(30, 105, 112, 0.4);
+  background-color: #f9fcfc;
+  position: relative;
+}
+
+.pickup-chart-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.rns .rns-arrow {
+  margin: 50px 0;
+  font-size: 60px;
+}
+
+.last6chart-1-wrapper,
+.last6chart-2-wrapper,
+.last6chart-3-wrapper,
+.last6chart-4-wrapper,
+.last6chart-5-wrapper,
+.last6chart-6-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  padding-bottom: 30px;
+}
+.pickup-accordion-chart {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.pickup-chart-heading {
+  font-size: 16px;
+}
+
+.pickup-accordion-chart-wrapper .pickup-chart-title {
+  font-size: 14px;
+}
+
+.last7-chart1-wrapper,
+#last7-chart-target {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.last7-chart2-wrapper,
+#last7-chart2-target {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+#last7chart2 > svg {
+  width: 100%;
+}
+
+.last7chart1-legend-row {
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+
+.last7chart1-legend {
+  margin: 0 20px;
+  font-size: 18px;
+}
+
+.last7chart1-legend .fas {
+  color: #a7e9ef;
+}
+
+.revenue-legend .fas {
+  color: #458389;
+}
+
+/* #last7-chart-target,
+#last7-chart2-target {
+  width: 50%;
+} */
+
+#last7-chart-target {
+  width: 65%;
+}
+
+#last7-chart2-target {
+  width: 32%;
+  margin: 0 10px 8px 2%;
+  padding: 30px 20px;
+  box-shadow: 0 3px 6px #51adb5;
+}
+
+.last7-chart2-title {
+  font-size: 20px;
+}
+
+#headingTwo {
+  margin-bottom: 30px;
+}

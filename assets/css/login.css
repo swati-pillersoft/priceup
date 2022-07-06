@@ -1,0 +1,244 @@
+.login-page > .container-fluid {
+  height: 100vh;
+}
+
+.login-main-row {
+  height: 100%;
+}
+
+.login-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/login-img/login-bg.jpg");
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  padding: 0 6%;
+  height: 100%;
+}
+.login-heading {
+  color: #fff;
+  font-weight: 400;
+  font-size: 34px;
+}
+.login-para {
+  color: #fff;
+  font-size: 15px;
+}
+.login-btn {
+  margin-top: 35px;
+  padding: 10px 0;
+  width: 50%;
+  border-width: 2px;
+  border-color: #fff;
+  color: #fff;
+  font-size: 22px;
+  float: left;
+  margin-right: 15px;
+}
+.login-details {
+  background: #e8f0f1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.login-btn:hover {
+  background: transparent;
+}
+
+.login-btn.hvr-sweep-to-right:before {
+  background-color: #fff;
+}
+
+.login-btn.hvr-sweep-to-right:hover,
+.login-btn.hvr-sweep-to-right:focus,
+.login-btn.hvr-sweep-to-right:active {
+  color: #000;
+}
+
+.back-forgot.hvr-sweep-to-right:before {
+  background-color: #fff;
+}
+
+.back-forgot:hover {
+  background: transparent;
+}
+
+.back-forgot.hvr-sweep-to-right:hover,
+.back-forgot.hvr-sweep-to-right:focus,
+.back-forgot.hvr-sweep-to-right:active {
+  color: #000;
+}
+
+.login-wrapper,
+.login-form {
+  width: 100%;
+}
+
+.login-form-logo {
+  margin: 0 auto 40px auto;
+  display: block;
+}
+
+.log-form-group,
+.log-label {
+  width: 100%;
+}
+
+.login-cta {
+  width: 80%;
+  background: #51adb5;
+  border-color: #51adb5;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.login-cta:hover {
+  background: #51adb5;
+  border-color: #51adb5;
+}
+
+.login-cta.hvr-sweep-to-right::before {
+  background: #408d94;
+  /* border-color: #51adb5; */
+}
+
+.login-form {
+  text-align: center;
+  font-size: 15px;
+}
+
+.login-wrapper {
+  padding: 25px;
+}
+
+.log-label > .form-control {
+  padding: 25px 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 0;
+  color: #1a1a1a;
+}
+
+.log-label > .form-control:focus {
+  box-shadow: none;
+}
+
+.log-link {
+  color: #51adb5;
+  text-decoration: none;
+}
+
+.log-link:hover {
+  border: none;
+  color: #51adb5;
+  text-decoration: none;
+}
+
+.login-wrapper {
+  padding: 80px;
+}
+
+.forgot-link {
+  margin: 0px 0 40px 0;
+  display: block;
+}
+
+.copy-para {
+  margin-top: 50px;
+}
+
+#recoveryModal .modal-header,
+#recoveryModal .modal-footer {
+  border: 0;
+}
+
+@media (min-width: 1200px) {
+  .login-wrapper {
+    padding: 90px 90px 10px 90px;
+  }
+
+  .copy-para {
+    position: absolute;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .login-wrapper {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .login-wrapper {
+    padding: 40px 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .login-wrapper {
+    padding: 30px;
+  }
+}
+
+/* forgot password */
+.login-details.forgot-page {
+  flex-direction: column;
+}
+.forgot-heading {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.forgot-text {
+  font-size: 13px;
+  color: #1a1a1a;
+  line-height: 14px;
+  margin-bottom: 30px;
+}
+.signin-link {
+  font-weight: 600;
+}
+
+.recover-password-btn {
+  width: 100%;
+  background: #51adb5;
+  border-color: #51adb5;
+  font-size: 20px;
+  border-radius: 4px;
+}
+.recover-password-btn:hover {
+  background: #51adb5;
+  border-color: #51adb5;
+}
+
+.recover-password-btn.hvr-sweep-to-right::before {
+  background: #408d94;
+  /* border-color: #51adb5; */
+}
+.forgot-modal {
+  background: rgb(255, 255, 255, 0.66);
+  width: 65%;
+  margin: 0 auto;
+}
+.forgot-modal-body {
+  text-align: justify;
+  padding: 0 10px 16px 10px;
+}
+.forgot-modal-logo {
+  width: 100px;
+  margin-top: 10px;
+}
+.closebtn {
+  color: #408d94 !important;
+}
+.back-forgot {
+  margin-top: 35px;
+  padding: 10px 20px;
+  border-width: 2px;
+  border-color: #fff;
+  color: #fff;
+  font-size: 22px;
+}
+.back-forgot i {
+}

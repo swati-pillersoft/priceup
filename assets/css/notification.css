@@ -1,0 +1,172 @@
+.notification-dropdown > .nav-link {
+  font-size: 24px;
+  color: #64b0b5 !important;
+}
+
+.notification-dropdown .dropdown-toggle::after {
+  display: none;
+}
+
+.notification-dropdown .badge-up {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+  color: #fff;
+  background-color: rgba(200, 67, 71, 1);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  border-radius: 50%;
+  font-size: 9px;
+  width: 18px;
+  height: 18px;
+  line-height: 14px;
+}
+
+.notification-dropdown.dropdown-lg .dropdown-menu {
+  width: 280px;
+  background: #e6eeef;
+  padding: 0;
+  border: 0;
+  margin-top: 12px;
+}
+
+.notification-dropdown .list-group-item a {
+  text-decoration: none;
+}
+
+.notification-thumb {
+  display: inline-flex;
+  color: #51adb5;
+  background: #fff;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  font-size: 14px;
+}
+
+.notification-dropdown .dropdown-menu ul {
+  margin-top: 0px;
+  background: transparent;
+}
+
+.list-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.noti-header01 h6 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 0;
+  line-height: 18px;
+}
+
+.media-body p {
+  color: #64afb4;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: initial;
+}
+
+.dropdown-lg .dropdown-menu .media .media-body .msg-info {
+  font-size: 14px;
+  color: #565656;
+  white-space: normal;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+.no-dp .list-group-item {
+  border: none;
+}
+
+.notifications-main,
+.notifications-sidebar {
+  padding: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.notifications-sidebar {
+  margin: 0 15px;
+  align-self: flex-start;
+}
+
+.notifications-main {
+  flex: 1;
+}
+
+.notification-group-heading {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #51adb5;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.notification-row {
+  margin-top: 25px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 15px;
+  display: flex;
+}
+
+.notification-text {
+  flex: 1;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+.notification-time {
+  color: #51adb5;
+  font-size: 13px;
+}
+
+.notification-delete {
+  border: 0;
+  background: transparent;
+  outline: 0;
+}
+
+#v-pills-notification .nav-link {
+  background: #e8f0f1;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  margin-bottom: 15px;
+}
+
+#v-pills-notification a.nav-link.active::after {
+  display: none;
+}
+
+.notification-tab-count {
+  font-size: 14px;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/hover.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/calendar.css" />
+    <title>Pillersoft Technologies</title>
+  </head>
+  <body>
+    <div class="event-calendar">
+      <div id="calendar"></div>
+      <div class="calendar-legend">
+        <div class="legend-increase">
+          <span></span>
+          Increase
+        </div>
+        <div class="legend-decrease">
+          <span></span>
+          Decrease
+        </div>
+        <div class="legend-maintain">
+          <span></span>
+          Maintain
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/rrule@2.6.4/dist/es5/rrule.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/rrule@5.5.0/main.global.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var calendarEl = document.getElementById("calendar");
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: "dayGridMonth",
+          themeSystem: "bootstrap",
+          dayHeaderFormat: { weekday: "long" },
+          headerToolbar: {
+            left: "today",
+            center: "title",
+            right: "addEventButton",
+          },
+
+          buttonText: {
+            today: "Today",
+          },
+
+          //   editable: true,
+          customButtons: {
+            // dateDropdown: {
+            //   text: "custom!",
+            //   click: function () {
+            //     alert("clicked the custom button!");
+            //   },
+            // },
+            addEventButton: {
+              text: "Add events",
+              click: function () {
+                var dateStr = prompt("Enter a date in YYYY-MM-DD format");
+                var date = new Date(dateStr + "T00:00:00"); // will be in local time
+
+                if (!isNaN(date.valueOf())) {
+                  // valid?
+                  calendar.addEvent({
+                    title: "dynamic event",
+                    start: date,
+                    allDay: true,
+                  });
+                  alert("Your event has been created.");
+                } else {
+                  alert("Invalid date.");
+                }
+              },
+            },
+          },
+          events: [
+            {
+              title: "€144",
+              rrule: {
+                freq: "daily",
+                dtstart: "2012-02-01",
+              },
+              color: "#E8F0F1",
+              exdate: ["2022-05-01", "2022-05-05", "2022-05-25"], // will also accept a single string
+            },
+            {
+              title: "9% vs Current",
+              rrule: {
+                freq: "daily",
+                dtstart: "2012-02-01",
+              },
+              color: "#E8F0F1",
+              exdate: ["2022-05-01", "2022-05-05", "2022-05-25"], // will also accept a single string
+            },
+            {
+              title: "9% vs Current",
+              start: "2022-05-01",
+              end: "2022-05-01",
+              color: "#1E6970",
+              textColor: "#ffffff",
+              extendedProps: {
+                img: "long-arrow-up",
+              },
+              //   exdate: ["2022-05-20", "2022-05-20"], // will also accept a single string
+            },
+            {
+              title: "€144",
+              start: "2022-05-01",
+              end: "2022-05-01",
+              color: "#1E6970",
+              textColor: "#ffffff",
+              //   exdate: ["2022-05-20", "2022-05-20"], // will also accept a single string
+            },
+            {
+              title: "€144",
+              start: "2022-05-05",
+              end: "2022-05-05",
+              color: "#1E6970",
+              textColor: "#ffffff",
+
+              //   exdate: ["2022-05-20", "2022-05-20"], // will also accept a single string
+            },
+            {
+              title: "9% vs Current",
+              start: "2022-05-05",
+              end: "2022-05-05",
+              color: "#1E6970",
+              textColor: "#ffffff",
+              extendedProps: {
+                img: "long-arrow-up",
+              },
+
+              //   exdate: ["2022-05-20", "2022-05-20"], // will also accept a single string
+            },
+
+            {
+              title: "€144",
+              start: "2022-05-25",
+              end: "2022-05-25",
+              color: "#CC5252",
+              textColor: "#ffffff",
+
+              //   exdate: ["2022-05-20", "2022-05-20"], // will also accept a single string
+            },
+            {
+              title: "9% vs Current",
+              start: "2022-05-25",
+              end: "2022-05-25",
+              color: "#CC5252",
+              textColor: "#ffffff",
+              extendedProps: {
+                img: "long-arrow-up",
+              },
+
+              //   exdate: ["2022-05-20", "2022-05-20"], // will also accept a single string
+            },
+          ],
+          eventContent: function (args, createElement) {
+            // console.log(args.event);
+            const icon = args.event._def.extendedProps?.img;
+            const text =
+              "<em class='fas fa-" + icon + "'></em> " + args.event._def.title;
+            return {
+              html: text,
+            };
+          },
+          //   eventColor: "#E8F0F1",
+          eventTextColor: "#000000",
+        });
+        calendar.render();
+      });
+    </script>
+  </body>
+</html>

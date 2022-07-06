@@ -1,0 +1,34 @@
+[
+  { "id": "a", "title": "Events" },
+  {
+    "id": "b",
+    "title": "Unit Sold",
+    "backgroundColor": "#EB8D8D",
+    "eventColor": "#EB8D8D"
+  },
+  { "id": "c", "title": "Revenue", "eventColor": "#EB8D8D" },
+  {
+    "id": "d",
+    "title": "ADR"
+  },
+  {
+    "id": "d",
+    "title": "RevPAR"
+  },
+  {
+    "id": "e",
+    "title": "Occupancy"
+  },
+  {
+    "id": "f",
+    "title": "Room Standard"
+  },
+  {
+    "id": "g",
+    "title": "Room Comfort"
+  },
+  {
+    "id": "h",
+    "title": "Room Premium"
+  }
+]
