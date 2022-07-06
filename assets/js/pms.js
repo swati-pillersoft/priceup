@@ -3,66 +3,68 @@
 //   .appendTo($(".col-sm-6:eq(0)", reservationTable.table().container()));
 
 $(document).ready(function () {
-  var reservationTable = $("#reservationTable").DataTable({
-    language: {
-      paginate: {
-        previous: "&lt;",
-        next: "&gt;",
-      },
-    },
-    scrollX: true,
-    ordering: false,
-    lengthChange: false,
-    // dom: "Bfrtip",
-    buttons: [
-      {
-        text: "<span class='fas fa-plus'></span>",
-        action: function (e, dt, node, config) {
-          console.log("Add button clicked");
+  setTimeout(() => {
+    var reservationTable = $("#reservationTable").DataTable({
+      language: {
+        paginate: {
+          previous: "&lt;",
+          next: "&gt;",
         },
       },
-      {
-        text: "<span class='fas fa-print'></span>",
-        extend: "print",
-      },
-      {
-        text: "<span class='fas fa-file-excel'></span>",
-        extend: "excel",
-      },
-      {
-        text: "<span class='fas fa-sync'></span>",
-        action: function (e, dt, node, config) {
-          // dt.ajax.reload();
-          console.log("reload button clicked");
+      scrollX: true,
+      ordering: false,
+      lengthChange: false,
+      // dom: "Bfrtip",
+      buttons: [
+        {
+          text: "<span class='fas fa-plus'></span>",
+          action: function (e, dt, node, config) {
+            console.log("Add button clicked");
+          },
+        },
+        {
+          text: "<span class='fas fa-print'></span>",
+          extend: "print",
+        },
+        {
+          text: "<span class='fas fa-file-excel'></span>",
+          extend: "excel",
+        },
+        {
+          text: "<span class='fas fa-sync'></span>",
+          action: function (e, dt, node, config) {
+            // dt.ajax.reload();
+            console.log("reload button clicked");
+          },
+        },
+      ],
+      // info: false,
+    });
+    reservationTable
+      .buttons()
+      .container()
+      .appendTo(".reservation-tableheader .tableheader-left");
+    $("#reservationTable_filter input")
+      .appendTo(".reservation-tableheader .tableheader-right")
+      .prop("placeholder", "Search");
+
+    var totalReservationRecords = reservationTable.page.info().recordsTotal;
+    $("#reservationTable_info").html("Total: " + totalReservationRecords);
+
+    var rategroupTable = $("#rategroupTable").DataTable({
+      language: {
+        paginate: {
+          previous: "&lt;",
+          next: "&gt;",
         },
       },
-    ],
-    // info: false,
-  });
-  reservationTable
-    .buttons()
-    .container()
-    .appendTo(".reservation-tableheader .tableheader-left");
-  $("#reservationTable_filter input")
-    .appendTo(".reservation-tableheader .tableheader-right")
-    .prop("placeholder", "Search");
-
-  var totalReservationRecords = reservationTable.page.info().recordsTotal;
-  $("#reservationTable_info").html("Total: " + totalReservationRecords);
-
-  var rategroupTable = $("#rategroupTable").DataTable({
-    language: {
-      paginate: {
-        previous: "&lt;",
-        next: "&gt;",
-      },
-    },
-    scrollX: true,
-    ordering: false,
-    searching: false,
-    // paging: false,
-    // lengthChange: true,
-  });
+      scrollX: true,
+      ordering: false,
+      searching: false,
+      // paging: false,
+      // lengthChange: true,
+    });
+  }, 800);
 
   $("#reservationModal").on("shown.bs.modal", function (e) {
     $(".modal-backdrop").addClass("reservation-backdrop");
