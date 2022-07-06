@@ -470,3 +470,8 @@
 .pms-tabs-row .nav-link img {
   width: 20px;
 }
+
+.dataTables_scrollHeadInner,
+.table {
+  width: 100% !important;
+}
