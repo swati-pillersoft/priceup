@@ -117,6 +117,7 @@
   left: 3px;
   font-size: 20px;
   color: #ffe13b;
+  cursor: pointer;
   /* pointer-events: none; */
 }
 

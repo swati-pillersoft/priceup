@@ -761,3 +761,7 @@ document.addEventListener("DOMContentLoaded", function () {
     $("#rateshopperChartView").show();
   });
 });
+
+function openCalendar() {
+  $('a[href="#v-pills-calendar"]').tab("show");
+}

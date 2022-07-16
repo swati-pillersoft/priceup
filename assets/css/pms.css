@@ -167,22 +167,22 @@
 }
 
 /* width */
-#reservationModal .modal-body::-webkit-scrollbar {
+.priceupcustom-scrollbar .modal-body::-webkit-scrollbar {
   width: 10px;
 }
 
 /* Track */
-#reservationModal .modal-body::-webkit-scrollbar-track {
+.priceupcustom-scrollbar .modal-body::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
 /* Handle */
-#reservationModal .modal-body::-webkit-scrollbar-thumb {
+.priceupcustom-scrollbar .modal-body::-webkit-scrollbar-thumb {
   background: #888;
 }
 
 /* Handle on hover */
-#reservationModal .modal-body::-webkit-scrollbar-thumb:hover {
+.priceupcustom-scrollbar .modal-body::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
@@ -191,13 +191,13 @@
   opacity: 1;
 }
 
-#reservationModal .form-control {
+.form-underline .form-control {
   border: 0;
   border-bottom: 1px solid lightgray;
   border-radius: 0;
 }
 
-#reservationModal .form-control:focus {
+.form-underline .form-control:focus {
   box-shadow: none;
   border-bottom-color: darkslategray;
 }
@@ -475,4 +475,140 @@
 .dataTables_scrollHeadInner,
 .table {
   width: 100% !important;
+}
+
+#pmsRoomCalendar th {
+  font-weight: 400;
+  text-align: center;
+}
+
+#pmsRoomCalendar {
+  text-align: center;
+  color: #555;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px #51adb5;
+}
+
+#pmsRoomCalendar th.fc-timeline-slot {
+  border: 0px !important;
+  border-bottom: 1px solid #ccc !important;
+}
+
+#pmsRoomCalendar .fc-timeline-slot-frame a {
+  color: #555;
+}
+
+#pmsRoomCalendar .fc-datagrid-header .fc-datagrid-cell-frame {
+  justify-content: center;
+}
+
+#pmsRoomCalendar .roomtype-col {
+  color: #50adb5;
+}
+
+#pmsRoomCalendar td,
+#pmsRoomCalendar th {
+  vertical-align: middle;
+}
+
+#pmsRoomCalendar .fc-datepickerBtn-button {
+  display: none !important;
+}
+
+.pmsratecalendardatepickericon {
+  position: absolute;
+  right: 6px;
+  top: 4px;
+  pointer-events: none;
+}
+
+#pmsRoomCalendarDatepicker {
+  color: #999;
+}
+
+#pmsRoomCalendar .fc-timeline-bg .fc-bg-event {
+  opacity: 1;
+  margin: 4px;
+  border-radius: 3px;
+}
+
+.pmsroomcalendarevent {
+  display: inline-flex;
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 14px;
+  position: relative;
+  padding: 0 10px;
+}
+
+.pmsroomcalendarevent.available {
+  background: #a7e9ef;
+}
+
+.pmsroomcalendarevent.arrivals {
+  background: #9ee6ab;
+}
+
+.pmsroomcalendarevent.pickup {
+  background: #f9d4ae;
+}
+
+#pmsRoomCalendar .fc-timeline-slots {
+  cursor: pointer;
+}
+/* 
+#pmsRoomCalendar .fc-timeline-event.fc-h-event {
+  background: transparent;
+  border: 0;
+  display: block;
+  height: 80%;
+}
+
+#pmsRoomCalendar .fc-timeline-event-harness,
+#pmsRoomCalendar .fc-timeline-more-link {
+  bottom: 0;
+}
+
+#pmsRoomCalendar .fc-event .fc-event-main {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+} */
+
+#roomcalendar .modal-header {
+  border-color: #50adb5;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06);
+}
+
+#roomcalendar .modal-content {
+  background: #f9fcfc;
+}
+
+#roomcalendar .modal .form-control {
+  background: transparent;
+}
+
+#roomcalendar .modal input[type="number"]::-webkit-inner-spin-button,
+#roomcalendar .modal input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+.pmsroomcalendarevent .info-icon {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  font-size: 13px;
+  pointer-events: none;
+}
+
+.editroomcalendarcancelbtn {
+  background: transparent !important;
+  color: #212529 !important;
+  box-shadow: none !important;
 }

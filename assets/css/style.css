@@ -400,7 +400,11 @@ a.nav-link.active::after {
   border-color: #50adb5 !important;
   color: #50adb5 !important;
 }
-
+.btn-start-cta:hover,
+.btn-start-cta:focus,
+.btn-start-cta:active {
+  color: #fff !important;
+}
 .btn-start-cta.hvr-sweep-to-right:before {
   background: #50adb5;
 }

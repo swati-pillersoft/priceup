@@ -109,7 +109,11 @@
                         </div>
                       </td>
                       <td>
-                        <button class="btn border-0 p-0 text-danger">
+                        <button
+                          class="btn border-0 p-0 text-danger"
+                          data-toggle="modal"
+                          data-target="#editareatypemodal"
+                        >
                           <i class="fas fa-pencil-alt"></i>
                         </button>
                       </td>
@@ -133,7 +137,11 @@
                         </div>
                       </td>
                       <td>
-                        <button class="btn border-0 p-0 text-danger">
+                        <button
+                          class="btn border-0 p-0 text-danger"
+                          data-toggle="modal"
+                          data-target="#editareatypemodal"
+                        >
                           <i class="fas fa-pencil-alt"></i>
                         </button>
                       </td>
@@ -157,7 +165,11 @@
                         </div>
                       </td>
                       <td>
-                        <button class="btn border-0 p-0 text-danger">
+                        <button
+                          class="btn border-0 p-0 text-danger"
+                          data-toggle="modal"
+                          data-target="#editareatypemodal"
+                        >
                           <i class="fas fa-pencil-alt"></i>
                         </button>
                       </td>
@@ -166,14 +178,356 @@
                 </table>
               </div>
             </div>
+            <!-- edit area type modal -->
+            <div
+              class="modal fade"
+              id="editareatypemodal"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <h5 class="modal-title h6">Edit Area Type</h5>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="form-group">
+                          <label for="areatype">Area type</label>
+                          <input
+                            type="text"
+                            placeholder="Standard Room"
+                            class="form-control"
+                            id="areatype"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-group">
+                          <label for="defaultoccup">Default Occupancy</label>
+                          <input
+                            type="number"
+                            placeholder="2"
+                            class="form-control"
+                            id="defaultoccup"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-group">
+                          <label for="description">Description</label>
+                          <input
+                            type="text"
+                            placeholder="Standard Room"
+                            class="form-control"
+                            id="description"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-group">
+                          <label for="maxoccup">Maximum Occupancy</label>
+                          <input
+                            type="number"
+                            placeholder="4"
+                            class="form-control"
+                            id="maxoccup"
+                          />
+                        </div>
+                      </div>
 
+                      <div class="col-6">
+                        <div class="report-text d-flex">
+                          <p class="report-para">Do not show in report</p>
+                          <div class="report-checkbox">
+                            <input
+                              type="checkbox"
+                              id="vehicle1"
+                              name="vehicle1"
+                              value="Bike"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div
+                          class="edit-type-text d-flex justify-content-between mb-3"
+                        >
+                          <span class="text1">Availability</span>
+                          <button
+                            class="btn p-0 text2"
+                            data-toggle="modal"
+                            data-target="#addavailabilitymodal"
+                          >
+                            ADD
+                          </button>
+                        </div>
+                        <div
+                          class="rate-group-table-wrapper table-responsive p-0"
+                        >
+                          <table
+                            class="table mb-1"
+                            id="areaTypeTable"
+                            style="width: 100%"
+                          >
+                            <thead>
+                              <tr>
+                                <th>From</th>
+                                <th>To</th>
+                                <th>Area Count</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Forever</td>
+                                <td class="text-primary">Forever</td>
+                                <td>2</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="modal-footer edit-modal-footer justify-content-center"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-primary edit-custom-btn"
+                    >
+                      Save
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary edit-custom-btn custom-btn-cancel"
+                      data-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- add availability modal -->
+            <div
+              class="modal fade"
+              id="addavailabilitymodal"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <h5 class="modal-title h6">Add Availability</h5>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="form-group">
+                          <label for="from">From</label>
+                          <input type="text" class="form-control" id="from" />
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-group">
+                          <label for="to">To</label>
+                          <input type="text" class="form-control" id="to" />
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-group">
+                          <label for="areacount">Area Count</label>
+                          <input
+                            type="number"
+                            class="form-control"
+                            id="areacount"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="modal-footer edit-modal-footer justify-content-center"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-primary edit-custom-btn"
+                    >
+                      Add
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary edit-custom-btn custom-btn-cancel"
+                      data-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- eventcategories -->
             <div
               class="tab-pane fade"
               id="eventcategories"
               role="tabpanel"
               aria-labelledby="eventcategories-tab"
-            ></div>
+            >
+              <div class="table-responsive table-roundedheader-striped">
+                <table class="table">
+                  <thead>
+                    <th>Event Category</th>
+                    <th>Event Color</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Public holiday</td>
+                      <td>
+                        <span
+                          class="event-square fas fa-square text-publicholiday"
+                        ></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Expo</td>
+                      <td>
+                        <span
+                          class="event-square fas fa-square text-expo"
+                        ></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Health warnings</td>
+                      <td>
+                        <span
+                          class="event-square fas fa-square text-healthwarning"
+                        ></span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Sports</td>
+                      <td>
+                        <span
+                          class="event-square fas fa-square text-sports"
+                        ></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>School holidays</td>
+                      <td>
+                        <span
+                          class="event-square fas fa-square text-schoolholiday"
+                        ></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Conferences</td>
+                      <td>
+                        <span
+                          class="event-square fas fa-square text-conference"
+                        ></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Observances</td>
+                      <td>
+                        <span
+                          class="event-square fas fa-square text-observcance"
+                        ></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>In House</td>
+                      <td>
+                        <span
+                          class="event-square fas fa-square text-inhouse"
+                        ></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Concert</td>
+                      <td>
+                        <span
+                          class="event-square fas fa-square text-concert"
+                        ></span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="text-right mb-3 px-3">
+                  <button
+                    class="btn p-0 text-primary"
+                    data-toggle="modal"
+                    data-target="#addeventcategorymodal"
+                  >
+                    ADD EVENT CATEGORIES
+                  </button>
+                </div>
+                <div
+                  class="modal fade"
+                  id="addeventcategorymodal"
+                  tabindex="-1"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header border-0">
+                        <h5 class="modal-title h6">Add Event Categories</h5>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label for="eventcategory">Event Category</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="eventcategory"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label for="eventcolor">Event Color</label>
+                              <div>
+                                <input
+                                  type="color"
+                                  class="form-control"
+                                  style="width: 80px"
+                                  id="eventcolor"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="modal-footer edit-modal-footer justify-content-center"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-primary edit-custom-btn"
+                        >
+                          Add
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-secondary edit-custom-btn custom-btn-cancel"
+                          data-dismiss="modal"
+                        >
+                          Cancel
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <!-- Mail Report -->
             <div
@@ -181,15 +535,458 @@
               id="mailreport"
               role="tabpanel"
               aria-labelledby="mailreport-tab"
-            ></div>
-
+            >
+              <div class="card border-0 mailreport-card">
+                <div
+                  class="card-header d-flex justify-content-between align-items-center"
+                >
+                  <span class="h6 mb-0">Received Mail</span>
+                  <button
+                    class="btn btn-outline-light"
+                    data-toggle="modal"
+                    data-target="#newmailreportmodal"
+                  >
+                    New Mail Report
+                  </button>
+                </div>
+                <div class="card-body">
+                  <p class="text-dark">
+                    You have to add your email to get all the updates . Mail
+                    Report will help you to keep up to date information of what
+                    is happening in your hotel.
+                  </p>
+                </div>
+                <div
+                  class="card-footer border-0 bg-white d-flex justify-content-between align-items-center"
+                >
+                  <span class="align-items-center d-flex"
+                    >Show:
+                    <select class="form-control mx-1">
+                      <option value="10" selected>10</option>
+                      <option value="20" selected>20</option>
+                      <option value="30" selected>30</option>
+                    </select>
+                    Reports</span
+                  >
+                  <span>Showing 0 of 10 Reports</span>
+                </div>
+              </div>
+            </div>
+            <!-- new mail report modal -->
+            <div
+              class="modal fade"
+              id="newmailreportmodal"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <h5 class="modal-title h6">New Mail Report</h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="lead small mb-3">
+                      With an e-mail Report you will always be up to date on
+                      what is happening in your hotel. Daily KPI's can give you
+                      an overview of the current situation in the hotel.
+                    </p>
+                    <div class="form-group row">
+                      <label for="receiver" class="col-md-5">Receiver</label>
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          placeholder="info@domain.com"
+                          class="form-control"
+                          id="receiver"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="emailreportactive" class="col-md-5"
+                        >Email report active</label
+                      >
+                      <div class="col-md-7">
+                        <div class="custom-control custom-switch">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="customSwitch1"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="customSwitch1"
+                          ></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <span class="label col-md-5">Interval</span>
+                      <div class="col-md-7">
+                        <div
+                          class="custom-control custom-radio custom-control-inline"
+                        >
+                          <input
+                            type="radio"
+                            id="intervalradio1"
+                            name="intervalradio"
+                            class="custom-control-input"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="intervalradio1"
+                            >Daily</label
+                          >
+                        </div>
+                        <div
+                          class="custom-control custom-radio custom-control-inline"
+                        >
+                          <input
+                            type="radio"
+                            id="intervalradio2"
+                            name="intervalradio"
+                            class="custom-control-input"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="intervalradio2"
+                            >Weekly</label
+                          >
+                        </div>
+                        <div
+                          class="custom-control custom-radio custom-control-inline"
+                        >
+                          <input
+                            type="radio"
+                            id="intervalradio3"
+                            name="intervalradio"
+                            class="custom-control-input"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="intervalradio3"
+                            >Monthly</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <span class="label col-md-5">Data</span>
+                      <div class="col-md-7">
+                        <div
+                          class="custom-control custom-checkbox custom-control-inline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="datacheckbox1"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="datacheckbox1"
+                            >Revenue</label
+                          >
+                        </div>
+                        <div
+                          class="custom-control custom-checkbox custom-control-inline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="datacheckbox2"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="datacheckbox2"
+                            >Pickup</label
+                          >
+                        </div>
+                        <div
+                          class="custom-control custom-checkbox custom-control-inline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="datacheckbox3"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="datacheckbox3"
+                            >revPAR</label
+                          >
+                        </div>
+                        <div
+                          class="custom-control custom-checkbox custom-control-inline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="datacheckbox4"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="datacheckbox4"
+                            >Unit sold</label
+                          >
+                        </div>
+                        <div
+                          class="custom-control custom-checkbox custom-control-inline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="datacheckbox5"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="datacheckbox5"
+                            >ADR</label
+                          >
+                        </div>
+                        <div
+                          class="custom-control custom-checkbox custom-control-inline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="datacheckbox6"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="datacheckbox6"
+                            >Occupancy</label
+                          >
+                        </div>
+                        <div
+                          class="custom-control custom-checkbox custom-control-inline"
+                        >
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="datacheckbox7"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="datacheckbox7"
+                            >Cancellations</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="modal-footer edit-modal-footer justify-content-center"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-primary edit-custom-btn"
+                    >
+                      Create
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary edit-custom-btn custom-btn-cancel"
+                      data-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- Integrations -->
             <div
               class="tab-pane fade"
               id="integrations"
               role="tabpanel"
               aria-labelledby="integrations-tab"
-            ></div>
+            >
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="card text-center mb-4">
+                    <div class="card-img-wrapper">
+                      <img
+                        class="card-img-top integration-img-card"
+                        src="./assets/img/mews-logo.png"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <div class="card-body pt-0">
+                      <p class="card-text">
+                        MEWS is a cloud PMS System provider from the Czech
+                        Republic. The PMS provider specializes in small and
+                        medium sized hotels. Very easy and fast to implement.
+                      </p>
+                      <a href="#" class="btn btn-lg btn-primary">Connect Now</a>
+                      <a href="#" class="text-primary d-block mt-2"
+                        >Go to the Website</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card text-center mb-4">
+                    <div class="card-img-wrapper">
+                      <img
+                        class="card-img-top integration-img-card"
+                        src="./assets/img/apaleo-logo.png"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <div class="card-body pt-0">
+                      <p class="card-text">
+                        Apaleo is a PMS system for hotel chains. Fast and easy
+                        to use PMS that runs entirely through the cloud. The
+                        provider from the Germany is very innovatives
+                      </p>
+                      <a href="#" class="btn btn-lg btn-primary">Connect Now</a>
+                      <a href="#" class="text-primary d-block mt-2"
+                        >Go to the Website</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card text-center mb-4">
+                    <div class="card-img-wrapper">
+                      <img
+                        class="card-img-top integration-img-card"
+                        src="./assets/img/protel-logo.png"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <div class="card-body pt-0">
+                      <p class="card-text">
+                        Protel I/O is module of Protel. It allows other systems
+                        to be connected to the classic protel system via the
+                        internet. Protel is a PMS system for family run hotels.
+                      </p>
+                      <a href="#" class="btn btn-lg btn-primary">Connect Now</a>
+                      <a href="#" class="text-primary d-block mt-2"
+                        >Go to the Website</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card text-center mb-4">
+                    <div class="card-img-wrapper">
+                      <img
+                        class="card-img-top integration-img-card"
+                        src="./assets/img/ibelsa.png"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <div class="card-body pt-0">
+                      <p class="card-text">
+                        MEWS is a cloud PMS System provider from the Czech
+                        Republic. The PMS provider specializes in small and
+                        medium sized hotels. Very easy and fast to implement.
+                      </p>
+                      <a href="#" class="btn btn-lg btn-primary">Connect Now</a>
+                      <a href="#" class="text-primary d-block mt-2"
+                        >Go to the Website</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card text-center mb-4">
+                    <div class="card-img-wrapper">
+                      <img
+                        class="card-img-top integration-img-card"
+                        src="./assets/img/brpms-logo.png"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <div class="card-body pt-0">
+                      <p class="card-text">
+                        MEWS is a cloud PMS System provider from the Czech
+                        Republic.The PMS provider specializes in small and
+                        medium sized hotels.Very easy and fast to implement.
+                      </p>
+                      <a href="#" class="btn btn-lg btn-primary">Connect Now</a>
+                      <a href="#" class="text-primary d-block mt-2"
+                        >Go to the Website</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card text-center mb-4">
+                    <div class="card-img-wrapper">
+                      <img
+                        class="card-img-top integration-img-card"
+                        src="./assets/img/clockpms-logo.png"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <div class="card-body pt-0">
+                      <p class="card-text">
+                        MEWS is a cloud PMS System provider from the Czech
+                        Republic. The PMS provider specializes in small and
+                        medium sized hotels. Very easy and fast to implement.
+                      </p>
+                      <a href="#" class="btn btn-lg btn-primary">Connect Now</a>
+                      <a href="#" class="text-primary d-block mt-2"
+                        >Go to the Website</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card text-center mb-4">
+                    <div class="card-img-wrapper">
+                      <img
+                        class="card-img-top integration-img-card"
+                        src="./assets/img/resavio.png"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <div class="card-body pt-0">
+                      <p class="card-text">
+                        MEWS is a cloud PMS System provider from the Czech
+                        Republic. The PMS provider specializes in small and
+                        medium sized hotels. Very easy and fast to implement.
+                      </p>
+                      <a href="#" class="btn btn-lg btn-primary">Connect Now</a>
+                      <a href="#" class="text-primary d-block mt-2"
+                        >Go to the Website</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card text-center mb-4">
+                    <div class="card-img-wrapper">
+                      <img
+                        class="card-img-top integration-img-card"
+                        src="./assets/img/impala.png"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <div class="card-body pt-0">
+                      <p class="card-text">
+                        MEWS is a cloud PMS System provider from the Czech
+                        Republic. The PMS provider specializes in small and
+                        medium sized hotels. Very easy and fast to implement.
+                      </p>
+                      <a href="#" class="btn btn-lg btn-primary">Connect Now</a>
+                      <a href="#" class="text-primary d-block mt-2"
+                        >Go to the Website</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

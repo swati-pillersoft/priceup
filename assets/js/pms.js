@@ -111,6 +111,46 @@ $(document).ready(function () {
       sideBySide: true,
       defaultDate: moment(),
     });
+
+    $("#roomcalendarcheckindate").datetimepicker({
+      format: "YYYY-MM-DD hh:mm A",
+
+      // Your Icons
+      // as Bootstrap 4 is not using Glyphicons anymore
+      icons: {
+        time: "fa fa-clock-o",
+        date: "fa fa-calendar",
+        up: "fa fa-chevron-up",
+        down: "fa fa-chevron-down",
+        previous: "fa fa-chevron-left",
+        next: "fa fa-chevron-right",
+        today: "fa fa-check",
+        clear: "fa fa-trash",
+        close: "fa fa-times",
+      },
+      sideBySide: true,
+      // defaultDate: moment(),
+    });
+
+    $("#roomcalendarcheckoutdate").datetimepicker({
+      format: "YYYY-MM-DD hh:mm A",
+
+      // Your Icons
+      // as Bootstrap 4 is not using Glyphicons anymore
+      icons: {
+        time: "fa fa-clock-o",
+        date: "fa fa-calendar",
+        up: "fa fa-chevron-up",
+        down: "fa fa-chevron-down",
+        previous: "fa fa-chevron-left",
+        next: "fa fa-chevron-right",
+        today: "fa fa-check",
+        clear: "fa fa-trash",
+        close: "fa fa-times",
+      },
+      sideBySide: true,
+      // defaultDate: moment(),
+    });
   }
   var reportRevenueChartCtx = document
     .getElementById("reportRevenueChart")
@@ -454,4 +494,298 @@ $(document).ready(function () {
     //   show: false,
     // },
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var pmsRoomCalendarEl = document.getElementById("pmsRoomCalendar");
+
+  var pmsRoomCalendar = new FullCalendar.Calendar(pmsRoomCalendarEl, {
+    headerToolbar: {
+      left: "datepickerBtn",
+      center: "title",
+      right: "prev,next",
+    },
+    customButtons: {
+      datepickerBtn: {
+        text: "custom!",
+        click: function () {
+          alert("clicked the custom button!");
+        },
+      },
+    },
+    initialView: "resourceTimelineMonth",
+    slotLabelContent: function ({ date }) {
+      return {
+        html: `<span class='d-block'><span class='d-block'>${moment(
+          date
+        ).format("dddd")}</span><span>${moment(date).format(
+          "DD"
+        )}</span></span>`,
+      };
+    },
+    viewDidMount: function (arg) {
+      $(
+        `<div class='position-relative'><input
+        type="text"
+        id="pmsRoomCalendarDatepicker" class='form-control my-2'
+      /><img src='./assets/img/icon-date.png' class='pmsratecalendardatepickericon' /></div>`
+      ).insertAfter($(".fc-datepickerBtn-button"));
+      $("#pmsRoomCalendarDatepicker")
+        .datepicker({
+          format: "mm/dd/yyyy",
+          autoclose: true,
+        })
+        .datepicker("setDate", "now")
+        .on("changeDate", function (e) {
+          let date = e.date;
+          pmsRoomCalendar.gotoDate(date);
+        });
+    },
+    dateClick: function (dateClickInfo) {
+      let jsInfo = dateClickInfo.jsEvent;
+      if (jsInfo.srcElement.className.includes("pmsroomcalendarevent")) {
+        return;
+      } else {
+        $("#pmsRoomCalendarAddReservationModal").modal("show");
+      }
+    },
+    eventClick: function () {
+      // alert("hi");
+      $("#pmsRoomCalendarEditReservationModal").modal("show");
+    },
+    eventContent: function ({ event }) {
+      return {
+        html: `<span class='pmsroomcalendarevent ${event.extendedProps.color}'><img src='./assets/img/info-icon.svg' class='info-icon' />${event.extendedProps.guestName} ${event.extendedProps.adults}+${event.extendedProps.children}</span>`,
+      };
+    },
+    aspectRatio: 2.5,
+    eventDisplay: "background",
+    editable: true,
+    events: [
+      {
+        resourceId: "101",
+        start: "2022-07-01",
+        end: "2022-07-03",
+        extendedProps: {
+          guestName: "Mario Rossi",
+          color: "available",
+          adults: "2",
+          children: "2",
+        },
+      },
+      {
+        resourceId: "101",
+        start: "2022-07-04",
+        end: "2022-07-06",
+        extendedProps: {
+          guestName: "Mario Rossi",
+          color: "arrivals",
+          adults: "2",
+          children: "1",
+        },
+      },
+      {
+        resourceId: "101",
+        start: "2022-07-08",
+        end: "2022-07-10",
+        extendedProps: {
+          guestName: "Mario Rossel",
+          color: "pickup",
+          adults: "1",
+          children: "2",
+        },
+      },
+      {
+        resourceId: "102",
+        start: "2022-07-01",
+        end: "2022-07-02",
+        extendedProps: {
+          guestName: "Mario Rossel",
+          color: "arrivals",
+          adults: "2",
+          children: "2",
+        },
+      },
+      {
+        resourceId: "102",
+        start: "2022-07-03",
+        end: "2022-07-06",
+        extendedProps: {
+          guestName: "Mario Rossi",
+          color: "available",
+          adults: "2",
+          children: "1",
+        },
+      },
+      {
+        resourceId: "102",
+        start: "2022-07-07",
+        end: "2022-07-09",
+        extendedProps: {
+          guestName: "Andrew Rossi",
+          color: "pickup",
+          adults: "2",
+          children: "2",
+        },
+      },
+      {
+        resourceId: "103",
+        start: "2022-07-01",
+        end: "2022-07-04",
+        extendedProps: {
+          guestName: "Andrew Rossi",
+          color: "pickup",
+          adults: "2",
+          children: "2",
+        },
+      },
+      {
+        resourceId: "103",
+        start: "2022-07-05",
+        end: "2022-07-10",
+        extendedProps: {
+          guestName: "Mario Rossi",
+          color: "arrivals",
+          adults: "2",
+          children: "2",
+        },
+      },
+      {
+        resourceId: "104",
+        start: "2022-07-01",
+        end: "2022-07-03",
+        extendedProps: {
+          guestName: "Mario Rossi",
+          color: "arrivals",
+          adults: "2",
+          children: "2",
+        },
+      },
+      {
+        resourceId: "104",
+        start: "2022-07-03",
+        end: "2022-07-07",
+        extendedProps: {
+          guestName: "Mario Rossi",
+          color: "available",
+          adults: "2",
+          children: "1",
+        },
+      },
+      {
+        resourceId: "104",
+        start: "2022-07-08",
+        end: "2022-07-09",
+        extendedProps: {
+          guestName: "Mario Rossi",
+          color: "pickup",
+          adults: "2",
+          children: "1",
+        },
+      },
+      {
+        resourceId: "105",
+        start: "2022-07-01",
+        end: "2022-07-08",
+        extendedProps: {
+          guestName: "Mario Rossi",
+          color: "pickup",
+          adults: "2",
+          children: "2",
+        },
+      },
+      {
+        resourceId: "106",
+        start: "2022-07-01",
+        end: "2022-07-07",
+        extendedProps: {
+          guestName: "Mario Rossel",
+          color: "available",
+          adults: "2",
+          children: "2",
+        },
+      },
+      {
+        resourceId: "106",
+        start: "2022-07-08",
+        end: "2022-07-09",
+        extendedProps: {
+          guestName: "Mario Rossel",
+          color: "arrivals",
+          adults: "2",
+          children: "2",
+        },
+      },
+      {
+        resourceId: "107",
+        start: "2022-07-01",
+        end: "2022-07-03",
+        extendedProps: {
+          guestName: "Mario Rossel",
+          color: "arrivals",
+          adults: "2",
+          children: "2",
+        },
+      },
+      {
+        resourceId: "107",
+        start: "2022-07-05",
+        end: "2022-07-09",
+        extendedProps: {
+          guestName: "Mario Rossi",
+          color: "pickup",
+          adults: "2",
+          children: "2",
+        },
+      },
+    ],
+
+    resourcesInitiallyExpanded: true,
+    expandRows: true,
+    resourceAreaColumns: [
+      {
+        field: "Room",
+        headerContent: "Room No.",
+      },
+      {
+        field: "Roomtype",
+        headerContent: "Room Type",
+        cellClassNames: "roomtype-col",
+      },
+    ],
+
+    resources: [
+      { id: "101", Room: "101", Roomtype: "Deluxe" },
+      { id: "102", Room: "102", Roomtype: "Standard" },
+      { id: "103", Room: "103", Roomtype: "Family" },
+      { id: "104", Room: "104", Roomtype: "Deluxe" },
+      { id: "105", Room: "105", Roomtype: "Standard" },
+      { id: "106", Room: "106", Roomtype: "Family" },
+      { id: "107", Room: "107", Roomtype: "Deluxe" },
+    ],
+  });
+
+  pmsRoomCalendar.render();
+
+  // $("#createNewReservationBtn").click(function (e) {
+  //   let newGuestInfo = Object.fromEntries(
+  //     new FormData(
+  //       document.querySelector("#pmsRoomCalendarAddReservationModal form")
+  //     )
+  //   );
+  //   console.log(newGuestInfo);
+  //   console.log(newGuestInfo.roomcalendarcheckindate.split(" ")[0]);
+  //   pmsRoomCalendar.addEvent({
+  //     resourceId: `${newGuestInfo.roomno}`,
+  //     title: `${newGuestInfo.guestname}`,
+  //     start: `${newGuestInfo.roomcalendarcheckindate.split(" ")[0]}`,
+  //     end: `${newGuestInfo.roomcalendarcheckoutdate.split(" ")[0]}`,
+  //     extendedProps: {
+  //       guestName: "Mario Rossi",
+  //       color: "pickup",
+  //       adults: "2",
+  //       children: "2",
+  //     },
+  //   });
+  // });
 });

@@ -687,3 +687,25 @@
   justify-content: space-between;
   padding: 0 30px;
 }
+
+#pmsRoomCalendar .fc-toolbar-title::after {
+  display: none;
+}
+
+#pmsRoomCalendar .fc-toolbar-title {
+  font-size: 18px;
+}
+
+#pmsRoomCalendar .fc-toolbar.fc-header-toolbar {
+  margin-bottom: 0;
+  background-color: #51adb5;
+  color: #fff;
+}
+
+#pmsRoomCalendar .fc-button-group .fc-button .fc-icon {
+  color: #fff;
+}
+
+#pmsRoomCalendar .fc-button-group .fc-button {
+  border: 0;
+}

@@ -52,7 +52,7 @@ var calendar = new FullCalendar.Calendar(calendarEl, {
     return {
       html: `${
         event.extendedProps.eventCategory?.toLowerCase() == "public-holiday"
-          ? `<span class='fas fa-square publicHoliday' onclick='openRateShopperDetail()'></span>`
+          ? `<span class='fas fa-square publicHoliday' title='${event.extendedProps.eventName}' onclick='openRateShopperDetail()'></span>`
           : ""
       }<p class='mb-0 ${tip && "eventWithTooltip"}' ${
         tip && `data-toggle="tooltip" data-html="true" data-title="${tip}"`
@@ -120,6 +120,7 @@ var calendar = new FullCalendar.Calendar(calendarEl, {
       tip: "Current Price: $144 </br> Suggested Price: $153 </br> Competitive Price: $156 <br/> <a href='#' id='triggerPricePage' class='btn btn-light'>I want Details</a>",
       extendedProps: {
         eventCategory: "public-holiday",
+        eventName: "Labour Day Holiday",
       },
     },
     {

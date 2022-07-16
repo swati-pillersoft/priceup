@@ -45,13 +45,34 @@
   text-align: center;
 }
 
-#areatype .custom-control-input:checked ~ .custom-control-label::before {
+#gensettingsTabContent
+  .custom-checkbox
+  .custom-control-input:checked
+  ~ .custom-control-label::before {
   color: #fff;
   border-color: #51adb5;
   background-color: #ffffff;
 }
 
-#areatype
+#gensettingsTabContent
+  .custom-radio
+  .custom-control-input:checked
+  ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #51adb5;
+  background-color: #51adb5;
+}
+
+#gensettingsTabContent
+  .custom-switch
+  .custom-control-input:checked
+  ~ .custom-control-label::before {
+  color: rgb(255, 255, 255);
+  border-color: #51adb5;
+  background-color: #51adb5;
+}
+
+#gensettingsTabContent
   .custom-checkbox
   .custom-control-input:checked
   ~ .custom-control-label::after {
@@ -63,4 +84,102 @@
   height: 2rem;
   background-image: url(../img/tick.svg);
   background-size: 0.9rem;
+}
+
+.table-roundedheader-striped {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px #51adb5;
+}
+
+.table-roundedheader-striped th {
+  border-top: 0;
+  white-space: nowrap;
+  background: rgb(80 173 181);
+  color: #fff;
+  font-weight: 400;
+  border-bottom: 10px solid #fff;
+  text-align: center;
+}
+
+.table-roundedheader-striped td {
+  background: #e6eeef;
+  border-width: 10px;
+  border-color: #fff;
+  text-align: center;
+}
+
+.text-publicholiday {
+  color: #ecd717;
+}
+
+.text-expo {
+  color: #a7e9ef;
+}
+
+.text-healthwarning {
+  color: #a6b9e6;
+}
+.text-sports {
+  color: #76c684;
+}
+.text-schoolholiday {
+  color: #e9aa69;
+}
+.text-conference {
+  color: #1e6970;
+}
+.text-observcance {
+  color: #4d4b4b;
+}
+.text-inhouse {
+  color: #f9d4ae;
+}
+.text-concert {
+  color: #b4b2b2;
+}
+.report-checkbox {
+  margin-left: 25px;
+}
+.text2 {
+  color: #50adb5;
+}
+.text1 {
+  color: #9e9d9d;
+}
+.modal-footer.edit-modal-footer {
+  border-top: 0;
+}
+.edit-custom-btn {
+  width: 170px;
+  padding: 12px;
+}
+.custom-btn-cancel {
+  background: transparent;
+  color: #000;
+  border-color: #51adb5;
+}
+
+.gensettings-wrapper .modal-header button {
+  font-size: 40px;
+  padding: 8px 20px;
+  color: #666;
+}
+.integration-img-card {
+  width: 35%;
+  max-height: 102px;
+  margin: 0 auto;
+}
+
+.card-img-wrapper {
+  height: 102px;
+  display: flex;
+  align-items: center;
+}
+
+#integrations .card {
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+}
+
+#addavailabilitymodal .modal-content {
+  border-color: #000;
 }
