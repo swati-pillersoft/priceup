@@ -92,3 +92,16 @@ $(function () {
     resetCallback: function () {},
   });
 });
+
+$(document).ready(function () {
+  setTimeout(() => {
+    if ($("#loader").length > 0) {
+      $("body").removeClass("no-overflow");
+      $("#loader").slideUp();
+    }
+  }, 1000);
+
+  AOS.init({
+    duration: 1500,
+  });
+});
